@@ -124,13 +124,13 @@ export default function Demolition() {
         viewport={{ once: true }}
         className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200"
       >
-       <video
-  className="w-full h-full object-cover"
-  src="/demo-vid.mp4"
-  controls
-  playsInline
-  preload="metadata"
-/>
+        <video
+        className="w-full h-full object-cover"
+        src="/demo-vid.mp4"
+        controls
+        playsInline
+        preload="metadata"
+      />
 
 
         <div className="absolute top-4 left-4 bg-[#093B5D] text-white text-sm px-4 py-1 rounded shadow-md">
