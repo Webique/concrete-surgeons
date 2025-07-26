@@ -17,15 +17,21 @@ export default function Demolition() {
   return (
     <div className={`${isRTL ? "rtl text-right" : "ltr text-left"} text-black`}>
       {/* PAGE TITLE */}
-      <section
-  className="relative w-full h-[90vh] mt-[100px] overflow-hidden"
-  style={{
-    backgroundImage: `url('/demohero.jpeg')`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-  }}
->
+      <section className="relative w-full h-[90vh] mt-[100px] overflow-hidden">
+  {/* Background Video (swapped from Home) */}
+  <video
+    className="absolute top-0 left-0 w-full h-full object-cover"
+    autoPlay
+    loop
+    muted
+    playsInline
+    preload="metadata"
+    poster="/video-thumbnail.jpg"
+  >
+    <source src="/your-video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
   {/* Dark Overlay */}
   <div className="absolute inset-0 bg-black/50"></div>
 

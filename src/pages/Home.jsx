@@ -41,23 +41,17 @@ export default function Home() {
     <div className={`${isRTL ? "rtl" : "ltr"} text-black`}>
     {/* HERO SECTION – Premium Cinematic with Word Animation */}
 <section className="relative w-full h-screen overflow-hidden text-white">
-  {/* Background Video */}
-  <video
+  {/* Background Image (swapped from Demolition) */}
+<div
   className="absolute top-0 left-0 w-full h-full object-cover"
-  autoPlay
-  loop
-  muted
-  playsInline
-  preload="metadata" // ✅ loads only metadata first, not entire video
-  poster="/video-thumbnail.jpg" // ✅ use a lightweight image preview
->
-  <source src="/your-video.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
+  style={{
+    backgroundImage: `url('/demohero.jpeg')`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+  }}
+></div>
 
-
-  {/* Overlay */}
-  <div className="absolute inset-0 bg-black/60 backdrop-blur-sm z-10" />
 
   {/* Centered Content */}
   <div className="relative z-20 flex flex-col items-center justify-center h-full px-6 sm:px-12 text-center">
