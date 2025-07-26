@@ -82,6 +82,7 @@ export default function Demolition() {
     <div className="relative">
       <img
         src="/demo1.png"
+        loading="lazy" // ✅ lazy load
         alt={t("demolition.safetyAlt")}
         className="w-full h-[400px] object-cover rounded-xl shadow-xl"
       />
@@ -123,15 +124,17 @@ export default function Demolition() {
         viewport={{ once: true }}
         className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200"
       >
-        <video
-          className="w-full h-full object-cover"
-          src="/demo.mp4"
-          autoPlay
-          loop
-          muted
-          playsInline
-          controls
-        />
+       <video
+  className="w-full h-full object-cover"
+  src="/demo.mp4"
+  autoPlay
+  loop
+  muted
+  playsInline
+  controls
+  preload="metadata" // ✅ loads only metadata first, not the full video
+></video>
+
         <div className="absolute top-4 left-4 bg-[#093B5D] text-white text-sm px-4 py-1 rounded shadow-md">
           {t("demolition.badgeHighReach", "High-Reach Precision")}
         </div>
@@ -172,6 +175,7 @@ export default function Demolition() {
           <img
             src="/demo2.png"
             alt={t("demolition.equipmentAlt")}
+            loading="lazy" // ✅ lazy load
             className="w-full h-[400px] object-cover rounded-xl shadow-lg"
           />
           <div className="space-y-6">
@@ -209,6 +213,7 @@ export default function Demolition() {
           <img
             src="/demo3.png"
             alt={t("demolition.whyAlt")}
+            loading="lazy" // ✅ lazy load
             className="w-full h-[400px] object-cover rounded-xl shadow-lg"
           />
         </motion.div>

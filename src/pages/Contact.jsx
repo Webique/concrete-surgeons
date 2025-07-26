@@ -19,6 +19,7 @@ export default function Contact() {
   <img
     src="/logo2.png" // Replace with your hero image if needed
     alt="Contact Background"
+    loading="lazy" // ✅ lazy load
     className="absolute inset-0 w-full h-full object-cover brightness-90"
   />
 

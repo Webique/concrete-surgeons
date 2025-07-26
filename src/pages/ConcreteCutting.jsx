@@ -59,6 +59,7 @@ export default function ConcreteCutting() {
   <img
     src="/diamond wire cutting.jpg" // Or replace with a more striking concrete cutting image
     alt="Concrete Cutting Hero"
+    loading="lazy" // ✅ lazy load
     className="absolute inset-0 w-full h-full object-cover brightness-75"
   />
 
@@ -115,6 +116,7 @@ export default function ConcreteCutting() {
               <img
                 src={service.img}
                 alt={service.title}
+                loading="lazy" // ✅ lazy load
                 className="rounded-xl shadow-md object-cover w-full h-64 md:h-72 hover:scale-105 transition-transform duration-500"
               />
               <div className="space-y-3">
@@ -146,6 +148,7 @@ export default function ConcreteCutting() {
             <img
               src="/images.jpeg"
               alt="Damietta Project Logo"
+              loading="lazy" 
               className="w-40 h-40 object-contain rounded-md shadow"
             />
             <p className="text-gray-700 text-lg leading-relaxed max-w-4xl">
@@ -157,16 +160,19 @@ export default function ConcreteCutting() {
             <img
               src="/تحميل ونش.jpg"
               alt="Damietta Port Operation"
+              loading="lazy"
               className="rounded-xl shadow-md object-cover h-56 w-full hover:scale-105 transition-transform duration-500"
             />
             <img
               src="/حلوة.jpg"
               alt="Precision Cutting"
+              loading="lazy"
               className="rounded-xl shadow-md object-cover h-56 w-full hover:scale-105 transition-transform duration-500"
             />
             <img
               src="/تحميل.jpg"
               alt="Concrete Handling"
+              loading="lazy" 
               className="rounded-xl shadow-md object-cover h-56 w-full hover:scale-105 transition-transform duration-500"
             />
           </div>
@@ -176,12 +182,13 @@ export default function ConcreteCutting() {
               {t("cutting.videoTitle")}
             </h3>
             <div className="aspect-video w-full rounded-xl overflow-hidden shadow-md">
-              <video
-                className="w-full h-full object-cover"
-                src="/D.mp4"
-                controls
-                playsInline
-              />
+            <video
+  className="w-full h-full object-cover"
+  src="/D.mp4"
+  controls
+  playsInline
+  preload="metadata"
+></video>
             </div>
           </div>
         </motion.div>

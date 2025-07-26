@@ -43,15 +43,18 @@ export default function Home() {
 <section className="relative w-full h-screen overflow-hidden text-white">
   {/* Background Video */}
   <video
-    className="absolute top-0 left-0 w-full h-full object-cover"
-    autoPlay
-    loop
-    muted
-    playsInline
-  >
-    <source src="/your-video.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+  className="absolute top-0 left-0 w-full h-full object-cover"
+  autoPlay
+  loop
+  muted
+  playsInline
+  preload="metadata" // ✅ loads only metadata first, not entire video
+  poster="/video-thumbnail.jpg" // ✅ use a lightweight image preview
+>
+  <source src="/your-video.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
 
   {/* Overlay */}
   <div className="absolute inset-0 bg-black/60 backdrop-blur-sm z-10" />
@@ -191,8 +194,10 @@ export default function Home() {
         <img
           src={images[1]}
           alt="Demolition"
+          loading="lazy" // ✅ lazy load
           className="absolute inset-0 w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700 ease-in-out"
         />
+
         <div className="absolute inset-0 bg-black/30 backdrop-blur-sm flex flex-col justify-center px-6 md:px-16 text-white">
           <h3 className="text-2xl md:text-4xl font-extrabold mb-2 drop-shadow-lg">
             {t("home.services.demolition.title")}
@@ -216,6 +221,7 @@ export default function Home() {
         <img
           src={images[2]}
           alt="Cutting"
+          loading="lazy" // ✅ lazy load
           className="absolute inset-0 w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700 ease-in-out"
         />
         <div className="absolute inset-0 bg-black/30 backdrop-blur-sm flex flex-col justify-center px-6 md:px-16 text-white">
@@ -249,6 +255,7 @@ function ImageSlider() {
             src={src}
             alt={`slider-${index}`}
             className="absolute w-full h-full object-cover transition-opacity duration-1000 opacity-0 animation-delay"
+            loading="lazy" // ✅ lazy load
             style={{ animationDelay: `${index * 6}s` }}
           />
         ))}
