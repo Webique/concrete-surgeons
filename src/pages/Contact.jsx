@@ -22,6 +22,7 @@ export default function Contact() {
     className="absolute inset-0 w-full h-full object-cover brightness-90"
   />
 
+
   {/* Foggy Overlay */}
   <div className="absolute inset-0 bg-white/30 backdrop-blur-sm"></div>
 
