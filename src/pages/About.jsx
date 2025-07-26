@@ -69,11 +69,11 @@ export default function About() {
           className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 items-center"
         >
           <img
-  src={about1}
-  alt="about-intro"
-  loading="lazy" // ✅ lazy load
-  className="w-full md:w-1/2 h-[300px] md:h-[400px] object-cover rounded-2xl shadow-lg"
-/>
+          src={about1}
+          alt="about-intro"
+          loading="lazy" // ✅ lazy load
+          className="w-full md:w-1/2 h-[300px] md:h-[400px] object-cover rounded-2xl shadow-lg"
+        />
           <div className="md:w-1/2 space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold border-b-2 pb-2 border-[#71869A]">
               {t("about.introTitle", "Who We Are")}

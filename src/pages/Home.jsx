@@ -118,11 +118,14 @@ export default function Home() {
       className="mt-8"
     >
       <a
-        href="#contact"
-        className="inline-block bg-gradient-to-r from-[#093B5D] to-[#71869A] text-white text-lg font-semibold px-8 py-3 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-transform duration-300"
-      >
-        {t("home.cta", "Get a Quote")}
-      </a>
+  href="https://wa.me/201028567000?text=Hello%2C%20I%20would%20like%20to%20get%20a%20quote." // ✅ WhatsApp link
+  target="_blank" // ✅ Opens in new tab
+  rel="noopener noreferrer" // ✅ Security best practice
+  className="inline-block bg-gradient-to-r from-[#093B5D] to-[#71869A] text-white text-lg font-semibold px-8 py-3 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-transform duration-300"
+>
+  {t("home.cta", "Get a Quote")}
+</a>
+
     </motion.div>
   </div>
 </section>
