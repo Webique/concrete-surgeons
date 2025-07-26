@@ -127,14 +127,10 @@ export default function Demolition() {
        <video
   className="w-full h-full object-cover"
   src="/demo.mp4"
-  autoPlay
-  loop
-  muted
-  playsInline
-  webkit-playsinline="true"  // ✅ iOS Safari support
   controls
+  playsInline
   preload="metadata"
-></video>
+/>
 
 
         <div className="absolute top-4 left-4 bg-[#093B5D] text-white text-sm px-4 py-1 rounded shadow-md">
