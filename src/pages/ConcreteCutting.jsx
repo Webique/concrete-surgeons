@@ -183,12 +183,12 @@ export default function ConcreteCutting() {
             </h3>
             <div className="aspect-video w-full rounded-xl overflow-hidden shadow-md">
             <video
-  className="w-full h-full object-cover"
-  src="/D.mp4"
-  controls
-  playsInline
-  preload="metadata"
-></video>
+            className="w-full h-full object-cover"
+            src="/D.mp4"
+            controls
+            playsInline
+            preload="metadata"
+          ></video>
             </div>
           </div>
         </motion.div>

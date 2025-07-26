@@ -126,7 +126,7 @@ export default function Demolition() {
       >
        <video
   className="w-full h-full object-cover"
-  src="/demo.mp4"
+  src="/demo-vid.mp4"
   controls
   playsInline
   preload="metadata"
