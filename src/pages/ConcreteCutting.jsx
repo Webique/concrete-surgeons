@@ -188,6 +188,7 @@ export default function ConcreteCutting() {
             controls
             playsInline
             preload="metadata"
+            loading="lazy" // ✅ lazy load
           ></video>
             </div>
           </div>

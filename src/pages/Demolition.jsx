@@ -130,6 +130,8 @@ export default function Demolition() {
   controls
   playsInline
   preload="metadata"
+  loading="lazy" // ✅ lazy load
+  autoPlay
 ></video>
 
 
