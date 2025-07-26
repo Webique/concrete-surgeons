@@ -178,7 +178,7 @@ export default function ConcreteCutting() {
             <div className="aspect-video w-full rounded-xl overflow-hidden shadow-md">
               <video
                 className="w-full h-full object-cover"
-                src="/d.mp4"
+                src="/D.mp4"
                 controls
                 playsInline
               />
