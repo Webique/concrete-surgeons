@@ -1,0 +1,174 @@
+{
+    "nav": {
+  "home": "Home",
+  "about": "About",
+  "services": "Services",
+  "contact": "Contact",
+  "demolition": "Demolition",
+  "cutting": "Concrete Cutting & Modification"
+},
+
+    "footer": {
+        "tagline": "Demolition, cutting & retrofitting — built for the future.",
+        "links": "Quick Links",
+        "contact": "Contact Us",
+        "hours": "Sun–Thu: 9:00 AM – 5:00 PM",
+        "rights": "All rights reserved."
+    },
+
+    "home": {
+        "title": "Concrete Surgeons | Demolition, Cutting, Retrofitting",
+        "heroTitle": "Demolition & Structural Excellence",
+        "heroSubtitle": "Since 2007, delivering expert concrete solutions across Egypt and the Gulf.",
+        "aboutTitle": "About Concrete Surgeons",
+        "aboutDescription": "Concrete Surgeons is the region’s leading specialist contractor in demolition, concrete cutting, and structural retrofitting — committed to safety and precision since 2007.",
+        "servicesTitle": "Our Core Services",
+        "servicesSubtitle": "Safe, precise, and expertly delivered demolition, cutting, and retrofitting solutions.",
+        "services": {
+          "demolition": {
+            "title": "Demolition",
+            "description": "From full-scale dismantling to selective strip-outs, we provide safe, engineered demolition using cutting-edge equipment."
+          },
+          "cutting": {
+            "title": "Concrete Cutting & Modification",
+            "description": "Clean, non-destructive cuts through slabs, walls, and beams — ideal for mechanical openings and structural separations."
+          }
+        }
+      },
+
+      "about": {
+        "title": "About Us",
+        "hero": "About Concrete Surgeons",
+        "introTitle": "Who We Are",
+        "introText": "Concrete Surgeons (CS) is the Middle East’s leading specialist in safety demolition, concrete cutting, and structural retrofitting. Since 2007, we've delivered precision solutions across Egypt and the Gulf, evolving into a trusted name in complex structural modification. Backed by over 15 years of experience, we support some of the region’s most challenging redevelopment and infrastructure projects.",
+        "whyTitle": "Why Choose CS?",
+        "reason1": "Over 15 years of regional expertise",
+        "reason2": "Pioneers in high-reach and controlled demolition",
+        "reason3": "Advanced machinery and OSHA-certified teams",
+        "reason4": "Minimal disruption, maximum safety",
+        "commitmentTitle": "Our Commitment",
+        "commitmentText": "Every CS project is executed with surgical precision — safe, clean, and technically sound — driven by expert teams and cutting-edge equipment. Our reputation is built on trust, performance, and a relentless drive for engineering excellence."
+      },
+
+      "demolition": {
+    "title": "Demolition Services",
+    "subtitle": "Safe. Controlled. Engineered for precision.",
+    "safetyTitle": "Engineered Demolition Solutions",
+    "safetyDesc": "We offer safety-first demolition tailored to each site. Whether full-scale dismantling or selective interior strip-outs, our methods prioritize structural control and minimal disruption in live environments.",
+    "safetyList": [
+      "Site-specific engineering surveys",
+      "Environmental control systems (dust, noise, vibration)",
+      "OSHA-certified demolition teams",
+      "Real-time monitoring and full code compliance"
+    ],
+    "safetyAlt": "Safety Demolition",
+    "toolsTitle": "High-Reach Demolition in Action",
+    "toolsDesc": "Our specialized machinery enables top-down dismantling in the tightest environments — hospitals, towers, urban zones and more.",
+    "equipmentTitle": "Specialized Equipment",
+    "equipmentList": [
+      "Epiroc DP 2800",
+      "Epiroc CB 4500",
+      "Ideal for towers, silos, high-rises, and dense zones"
+    ],
+    "equipmentAlt": "High-Reach Equipment",
+    "whyTitle": "Why Choose Concrete Surgeons?",
+    "whyList": [
+      "15+ years of experience in safety demolition",
+      "Trusted by major projects across the Middle East",
+      "Top-tier machinery and certified teams",
+      "Zero-incident record in high-risk environments"
+    ],
+    "whyAlt": "Why Choose CS",
+    "badgeSafety": "Safety First",
+  "badgeHighReach": "High-Reach Precision",
+  "toolsHighlightTitle": "Technical Advantages",
+  "toolsExtra": [
+    "Zero-vibration dismantling for hospitals and sensitive areas",
+    "Remote-operated arms ensure worker safety at heights"
+  ],
+  "toolsNote": "Minimal disruption in dense urban and live infrastructure zones."
+  },
+  "cutting": {
+  "title": "Concrete Cutting & Structural Modification",
+  "subtitle": "Precision cutting and modification for structural integrity and advanced engineering solutions.",
+  "servicesTitle": "Our Expertise",
+  "services": [
+    {
+      "title": "Structural Modifications for Changing Building Use",
+      "desc": "Includes comprehensive construction interventions such as reinforcement, redistribution, demolition, and excavation to adapt structures for new usage purposes. Suitable for space expansion, reshaping, or full structural reconfiguration in compliance with safety standards."
+    },
+    {
+      "title": "Restoration of Old Buildings",
+      "desc": "Restoration of deteriorated buildings by removing damaged concrete and corroded steel, replacing it with new reinforcement, applying anti-corrosion coatings, and recasting using specialized high-strength repair materials."
+    },
+    {
+      "title": "Crack & Cavity Repair",
+      "desc": "Cracks are treated using epoxy or resin injection techniques based on crack width and structure condition. Cavities are detected using non-destructive testing methods and filled with epoxy grout or high-strength concrete to restore structural integrity."
+    },
+    {
+      "title": "Concrete Section Enlargement",
+      "desc": "Enlargement of structural elements such as columns, beams, and slabs by extending reinforcement, applying bonding agents, and casting new reinforced concrete."
+    },
+    {
+      "title": "Shotcrete Application",
+      "desc": "Shotcrete is applied under high pressure to cover surfaces, fill voids, and repair damaged areas. Offers strong adhesion, low permeability, and long-lasting reinforcement."
+    },
+    {
+      "title": "Carbon Fiber Reinforced Polymer (CFRP) Strengthening",
+      "desc": "CFRP sheets and laminates strengthen concrete components with high tensile resistance. Lightweight and flexible, ideal for slabs, beams, and columns."
+    },
+    {
+      "title": "Strengthening by Steel Plates and Angles",
+      "desc": "Steel plates and angles reinforce concrete sections, increasing rigidity and durability, especially in retrofitting and repair projects."
+    },
+    {
+      "title": "Anchor Bolt Supply & Installation",
+      "desc": "High-performance anchor bolts secure equipment and structural elements, offering excellent pull-out resistance and long-term stability."
+    },
+    {
+      "title": "Steel Rebar Anchoring in Concrete",
+      "desc": "Advanced rebar anchoring systems embed steel into existing concrete using drilling, cleaning, and bonding for new reinforcement."
+    },
+    {
+      "title": "Concrete Demolition",
+      "desc": "Manual demolition uses hammers and chisels for precise removal. Mechanical demolition uses electric jackhammers for heavy or deep demolition."
+    },
+    {
+      "title": "Concrete Drilling",
+      "desc": "Diamond Core Drilling allows holes up to 1 meter, ideal for pass-throughs and testing. Hammer drilling is used for smaller anchor holes and conduit routing."
+    },
+    {
+      "title": "Concrete Cutting Services",
+      "desc": "Blade Saw Cutting handles walls/floors up to 50 cm thick. Diamond Wire Saw Cutting cuts reinforced concrete of any thickness or shape."
+    }
+  ],
+  "projectTitle": "Highlighted Project: Damietta Port",
+  "projectDesc": "Our concrete cutting expertise was utilized at Damietta Port for large-scale structural modifications, precision cutting of reinforced concrete, and high-strength anchoring — ensuring safe operations within an active marine environment.",
+  "videoTitle": "Watch Damietta Port Concrete Cutting in Action",
+  "galleryTitle": "Service Gallery"
+},
+"contactPage": {
+    "title": "Get in Touch",
+    "subtitle": "We’re here to answer your questions and discuss your next project.",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Office",
+    "addressValue": "70 Joseph Tito Street, New Nozha, Cairo, Egypt",
+    "formTitle": "Send Us a Message",
+    "name": "Your Name",
+    "emailInput": "Your Email",
+    "message": "Message",
+    "submit": "Send Message",
+    "mapTitle": "Our Location"
+  }
+
+
+
+  
+}
+
+
+
+      
+
+  

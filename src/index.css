@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins', 'Cairo', sans-serif; /* ✅ Updated */
+  background-color: #f7f7f7;
+  color: #1f1f1f;
+}
+
+@keyframes fadeSlider {
+  0%, 100% { opacity: 0; }
+  10%, 90% { opacity: 1; }
+}
+
+.animate-fadeSlider img {
+  animation: fadeSlider 42s infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: inline-flex;
+  animation: marquee 20s linear infinite;
+}
