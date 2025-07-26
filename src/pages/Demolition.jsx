@@ -125,14 +125,14 @@ export default function Demolition() {
         className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200"
       >
        <video
-  className="w-full h-full object-cover"
-  src="/demo.mp4"
-  autoPlay
-  loop
-  muted
-  playsInline
-  controls
-></video>
+        className="w-full h-full object-cover"
+        src="/demo.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        controls
+      ></video>
 
         <div className="absolute top-4 left-4 bg-[#093B5D] text-white text-sm px-4 py-1 rounded shadow-md">
           {t("demolition.badgeHighReach", "High-Reach Precision")}
