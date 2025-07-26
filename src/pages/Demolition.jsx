@@ -132,7 +132,6 @@ export default function Demolition() {
   muted
   playsInline
   controls
-  preload="metadata" // ✅ loads only metadata first, not the full video
 ></video>
 
         <div className="absolute top-4 left-4 bg-[#093B5D] text-white text-sm px-4 py-1 rounded shadow-md">
