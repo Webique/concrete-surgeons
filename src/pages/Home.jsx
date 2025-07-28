@@ -112,7 +112,7 @@ export default function Home() {
 
 
       {/* ABOUT US SECTION */}
-      <section ref={aboutRef} className="py-24 px-6 text-white bg-[#093B5D]">
+      <section ref={aboutRef} className="py-24 px-6 text-white bg-[#1c3b8d]">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={aboutInView ? { opacity: 1, y: 0 } : {}}

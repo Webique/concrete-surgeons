@@ -114,7 +114,7 @@ export default function About() {
       </section>
 
       {/* SECTION 3: OUR COMMITMENT */}
-      <section ref={missionRef} className="py-20 px-6 md:px-20 bg-[#093B5D] text-white">
+      <section ref={missionRef} className="py-20 px-6 md:px-20 bg-[#1c3b8d] text-white">
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           animate={missionInView ? { opacity: 1, y: 0 } : {}}

@@ -197,7 +197,7 @@ export default function Demolition() {
       </section>
 
       {/* WHY CHOOSE CS */}
-      <section ref={ref3} className="py-20 px-6 md:px-20 bg-[#093B5D] text-white">
+      <section ref={ref3} className="py-20 px-6 md:px-20 bg-[#1c3b8d] text-white">
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           animate={inView3 ? { opacity: 1, y: 0 } : {}}
