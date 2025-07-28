@@ -20,8 +20,9 @@ import client4 from "../assets/client4.png";
 import client5 from "../assets/client5.png";
 import client6 from "../assets/client6.png";
 import client7 from "../assets/client7.png"; // Main client logo
+import client8 from "../assets/client8.png"; // Additional logo for marquee
 
-const logos = [client1, client2, client3, client4, client5, client6, client7];
+const logos = [client1, client2, client3, client4, client5, client6, client7, client8];
 
 
 const images = [home1, home2, home3, home4, home5, home6, home7];
@@ -104,23 +105,6 @@ export default function Home() {
       {t("home.heroSubtitle")}
     </motion.p>
 
-    {/* CTA Button */}
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1.6 }}
-      className="mt-8"
-    >
-      <a
-  href="https://wa.me/201028567000?text=Hello%2C%20I%20would%20like%20to%20get%20a%20quote." // ✅ WhatsApp link
-  target="_blank" // ✅ Opens in new tab
-  rel="noopener noreferrer" // ✅ Security best practice
-  className="inline-block bg-gradient-to-r from-[#093B5D] to-[#71869A] text-white text-lg font-semibold px-8 py-3 rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-transform duration-300"
->
-  {t("home.cta", "Get a Quote")}
-</a>
-
-    </motion.div>
   </div>
 </section>
 

@@ -141,7 +141,7 @@ export default function Demolition() {
 
 
         <div className="absolute top-4 left-4 bg-[#093B5D] text-white text-sm px-4 py-1 rounded shadow-md">
-          {t("demolition.badgeHighReach", "High-Reach Precision")}
+          {t("demolition.badgeHighReach", "High-Reach Demolition")}
         </div>
       </motion.div>
 
