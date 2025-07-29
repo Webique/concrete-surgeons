@@ -135,11 +135,6 @@
         "servicesTitle": "Retrofitting Techniques",
         "services": [
           {
-            "title": "Rebar Anchoring Installation",
-            "desc": "• Advanced anchoring system compatible with various bar sizes and depths.\n• High-strength chemical adhesive ensures secure bond to concrete.\n• Ideal for structural connections and retrofit applications.\n• Rebar anchoring installation using adhesives",
-            "img": "/rebaranchor1.png"
-          },
-          {
             "title": "Carbon Fiber Reinforced Polymer (CFRP)",
             "desc": "• Lightweight carbon fiber sheets used for flexural or shear strengthening.\n• Provides up to 5x the tensile strength of steel.\n• Applied to beams, slabs, and columns to increase structural capacity.\n• Non-corrosive and ideal for aggressive environments.",
             "img": "/structrepair.png"
@@ -147,12 +142,12 @@
           {
             "title": "Steel Section Strengthening",
             "desc": "• Enhances structural integrity using steel plates, angles, or beams.\n• Used where load capacity needs to be upgraded without full replacement.\n• Techniques include welding/bolting sections and epoxy/grout composite action.",
-            "img": "/structrepair1.png"
+            "img": "/steelstrength.jpg"
           },
           {
             "title": "Concrete Section Enlargement (Jacketing)",
             "desc": "• Enlarges columns, beams, or walls to boost load-bearing capacity.\n• Uses steel reinforcement and bonding agents before applying new concrete.\n• Common in retrofitting projects or when design loads increase.",
-            "img": "/concretestructmodif.jpg"
+            "img": "/mod1.jpg"
           },
           {
             "title": "Shotcrete Application",
@@ -162,7 +157,12 @@
           {
             "title": "Cracks & Cavities Repair",
             "desc": "• Epoxy injection for structural cracks restores integrity and load transfer.\n• Polyurethane seals non-structural cracks to prevent water ingress.\n• Voids are filled using cementitious grout or injection-based methods.",
-            "img": "/rebaranchor2.png.jpg"
+            "img": "/crack1.jpg"
+          },
+          {
+            "title": "Rebar Anchoring Installation",
+            "desc": "• Advanced anchoring system compatible with various bar sizes and depths.\n• High-strength chemical adhesive ensures secure bond to concrete.\n• Ideal for structural connections and retrofit applications.\n• Rebar anchoring installation using adhesives",
+            "img": "/rebaranchor1.png"
           },
           {
             "title": "Pull-Out Test Services",

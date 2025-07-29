@@ -773,7 +773,7 @@ export default function Demolition() {
                 <h2 className="text-4xl sm:text-5xl font-black text-white mb-6">
                   {t("demolition.whyTitle")}
                 </h2>
-                <div className="w-20 h-1 bg-gradient-to-r from-orange-400 to-orange-600 rounded-full"></div>
+                <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-blue-500 rounded-full"></div>
               </div>
               
               <div className="grid sm:grid-cols-2 gap-6">
