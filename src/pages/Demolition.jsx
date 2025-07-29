@@ -62,6 +62,51 @@ export default function Demolition() {
 </section>
 
 
+{/* SECTION 1: Introduction & What Is It – Enhanced Design with Larger Image */}
+<section className="bg-gradient-to-b from-white via-[#f6f9fc] to-[#e9eef5] py-28 px-6 md:px-20">
+  <div className="max-w-7xl mx-auto space-y-24">
+
+    {/* SECTION HEADER */}
+    <motion.div
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+      className="text-center"
+    >
+      <h2 className="text-4xl md:text-5xl font-extrabold text-[#093B5D]">{t("demolition.highReachTitle")}</h2>
+      <p className="text-gray-700 text-lg md:text-xl mt-6 max-w-3xl mx-auto">
+        {t("demolition.highReachSubtitle")}
+      </p>
+    </motion.div>
+
+    {/* WHAT IS IT */}
+    <div className="grid md:grid-cols-12 gap-12 items-center">
+      {/* Left – Text */}
+      <div className="md:col-span-6 text-gray-800 text-[17px] leading-relaxed space-y-4">
+        <h3 className="text-2xl font-bold text-[#093B5D]">{t("demolition.whatIsTitle")}</h3>
+        <ul className="list-disc ml-5 space-y-2">
+          {t("demolition.whatIsList", { returnObjects: true }).map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Right – Larger Image */}
+      <div className="md:col-span-6 text-center">
+        <img
+          src="/new.png"
+          alt="High Reach Excavator"
+          loading="lazy"
+          className="w-full max-w-xl mx-auto rounded-xl shadow-md border border-gray-200 bg-white p-3"
+        />
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
       {/* SAFETY DEMOLITION */}
 <section ref={ref1} className="relative py-24 px-6 md:px-20 bg-white">
   <motion.div
@@ -79,10 +124,9 @@ export default function Demolition() {
         {t("demolition.safetyDesc")}
       </p>
       <ul className="list-disc ml-5 text-gray-700 text-lg space-y-1">
-        <li>{t("demolition.safetyList.0")}</li>
-        <li>{t("demolition.safetyList.1")}</li>
-        <li>{t("demolition.safetyList.2")}</li>
-        <li>{t("demolition.safetyList.3")}</li>
+        {t("demolition.safetyList", { returnObjects: true }).map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
       </ul>
     </div>
     <div className="relative">
@@ -93,15 +137,19 @@ export default function Demolition() {
         className="w-full h-[400px] object-cover rounded-xl shadow-xl"
       />
       <span className="absolute top-4 left-4 bg-[#093B5D] text-white px-4 py-1 text-sm rounded shadow-md">
-        {t("demolition.badgeSafety", "Safety First")}
+        {t("demolition.badgeSafety")}
       </span>
     </div>
   </motion.div>
 </section>
 
 
+
+
+
+
      {/* HIGH-REACH DEMOLITION – PREMIUM EMPHASIS */}
-<section className="relative py-28 px-6 md:px-20 bg-[#F0F2F5] overflow-hidden">
+     <section className="relative py-28 px-6 md:px-20 bg-[#F0F2F5] overflow-hidden">
   <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-[#F0F2F5] to-[#E4E6E9]"></div>
 
   <div className="relative max-w-7xl mx-auto text-center space-y-12">
@@ -141,7 +189,7 @@ export default function Demolition() {
 
 
         <div className="absolute top-4 left-4 bg-[#093B5D] text-white text-sm px-4 py-1 rounded shadow-md">
-          {t("demolition.badgeHighReach", "High-Reach Demolition")}
+          {t("demolition.badgeHighReach")}
         </div>
       </motion.div>
 
@@ -154,48 +202,245 @@ export default function Demolition() {
         className="space-y-5 text-left"
       >
         <h3 className="text-2xl font-bold text-[#093B5D]">
-          {t("demolition.toolsHighlightTitle", "Technical Advantages")}
+          {t("demolition.toolsHighlightTitle")}
         </h3>
         <ul className="list-disc text-gray-700 text-lg ml-5 space-y-2">
-          <li>{t("demolition.toolsExtra.0")}</li>
-          <li>{t("demolition.toolsExtra.1")}</li>
+          {t("demolition.toolsExtra", { returnObjects: true }).map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
         </ul>
         <p className="text-gray-600 mt-4 italic">
-          {t("demolition.toolsNote", "Minimal disruption in dense urban and live infrastructure zones.")}
+          {t("demolition.toolsNote")}
         </p>
       </motion.div>
     </div>
   </div>
 </section>
+{/* SECTION 2: Attachments & Pioneering – Elegant Design */}
+<section className="bg-[#f7f9fc] py-24 px-6 md:px-20">
+  <div className="max-w-6xl mx-auto space-y-24">
+
+   {/* ATTACHMENTS BLOCK – with Multiple Tools */}
+<div className="bg-white p-8 rounded-2xl shadow-md border border-gray-100">
+  <div className="grid md:grid-cols-12 gap-10 items-center">
+
+    {/* Text Content */}
+    <div className="md:col-span-6 text-gray-800 text-[17px] leading-relaxed space-y-4">
+      <h3 className="text-2xl font-bold text-[#093B5D]">{t("demolition.attachmentsTitle")}</h3>
+      <p>
+        {t("demolition.attachmentsDesc")}
+      </p>
+      <ul className="list-disc ml-5 space-y-2">
+        {t("demolition.attachmentsList", { returnObjects: true }).map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+    </div>
+
+    {/* Image Row */}
+    <div className="md:col-span-6">
+      <div className="flex flex-wrap justify-center gap-6 mt-6 md:mt-0">
+        <img
+          src="/neww1.png"
+          alt="Pulverizer"
+          loading="lazy"
+          className="w-[100px] h-auto rounded-md shadow-sm"
+        />
+        <img
+          src="/new2.png"
+          alt="Steel Shear"
+          loading="lazy"
+          className="w-[100px] h-auto rounded-md shadow-sm"
+        />
+        <img
+          src="/new3.png"
+          alt="Crusher"
+          loading="lazy"
+          className="w-[100px] h-auto rounded-md shadow-sm"
+        />
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    {/* PIONEERING BLOCK */}
+    <div className="grid md:grid-cols-12 items-center gap-8">
+      {/* Image */}
+      <div className="md:col-span-4 text-center">
+        <img
+          src="/neww2.png"
+          alt="Pioneering Equipment"
+          loading="lazy"
+          className="w-[180px] h-auto mx-auto rounded-lg shadow-sm"
+        />
+      </div>
+      {/* Text */}
+      <div className="md:col-span-8 text-gray-800 text-[17px] leading-relaxed">
+        <h3 className="text-2xl font-bold text-[#093B5D] mb-4">{t("demolition.pioneeringTitle")}</h3>
+        <p>
+          {t("demolition.pioneeringDesc")}
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 
-      {/* EQUIPMENT */}
-      <section ref={ref2} className="py-20 px-6 md:px-20 bg-white">
-        <motion.div
-          initial={{ opacity: 0, y: 60 }}
-          animate={inView2 ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
-          className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center"
-        >
+{/* SECTION 3: Supporting Images & Final Closing */}
+<section className="bg-[#e9ecf1] py-28 px-6 md:px-20">
+  <div className="max-w-7xl mx-auto space-y-24">
+
+    {/* SUPPORTING IMAGES – Premium Alternating Layout */}
+    <div className="space-y-20">
+
+      {/* Image + Text Block 1 */}
+      <div className="grid md:grid-cols-12 gap-8 items-center">
+        <div className="md:col-span-5">
           <img
-            src="/demo2.png"
-            alt={t("demolition.equipmentAlt")}
-            loading="lazy" // ✅ lazy load
-            className="w-full h-[400px] object-cover rounded-xl shadow-lg"
+            src="/new5.png"
+            alt="Urban Precision"
+            loading="lazy"
+            className="rounded-xl w-full max-w-sm mx-auto shadow-md object-cover"
           />
-          <div className="space-y-6">
-            <h2 className="text-3xl font-bold text-[#093B5D]">
-              {t("demolition.equipmentTitle")}
-            </h2>
-            <ul className="list-disc text-lg ml-5 text-gray-700 space-y-1">
-              <li>{t("demolition.equipmentList.0")}</li>
-              <li>{t("demolition.equipmentList.1")}</li>
-              <li>{t("demolition.equipmentList.2")}</li>
-            </ul>
-          </div>
-        </motion.div>
-      </section>
+        </div>
+        <div className="md:col-span-7 text-gray-700 text-lg leading-relaxed">
+          <h4 className="text-xl font-semibold text-[#093B5D] mb-2">{t("demolition.urbanTitle")}</h4>
+          {t("demolition.urbanDesc")}
+        </div>
+      </div>
 
+      {/* Block 2 */}
+      <div className="grid md:grid-cols-12 gap-8 items-center">
+        <div className="md:col-span-7 text-gray-700 text-lg leading-relaxed order-2 md:order-1">
+          <h4 className="text-xl font-semibold text-[#093B5D] mb-2">{t("demolition.machineryTitle")}</h4>
+          {t("demolition.machineryDesc")}
+        </div>
+        <div className="md:col-span-5 order-1 md:order-2">
+          <img
+            src="/new6.png"
+            alt="Custom Equipment"
+            loading="lazy"
+            className="rounded-xl w-full max-w-sm mx-auto shadow-md object-cover"
+          />
+        </div>
+      </div>
+
+      {/* Block 3 */}
+      <div className="grid md:grid-cols-12 gap-8 items-center">
+        <div className="md:col-span-5">
+          <img
+            src="/new7.png"
+            alt="Real-Time Monitoring"
+            loading="lazy"
+            className="rounded-xl w-full max-w-sm mx-auto shadow-md object-cover"
+          />
+        </div>
+        <div className="md:col-span-7 text-gray-700 text-lg leading-relaxed">
+          <h4 className="text-xl font-semibold text-[#093B5D] mb-2">{t("demolition.monitoringTitle")}</h4>
+          {t("demolition.monitoringDesc")}
+        </div>
+      </div>
+
+    </div>
+
+    {/* FINAL CLOSING */}
+    <div className="text-center space-y-10 pt-16">
+      <img
+        src="/new8.png"
+        alt="Concrete Surgeons"
+        loading="lazy"
+        className="mx-auto w-full max-w-md rounded-xl shadow-md"
+      />
+      <p className="text-base md:text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto">
+        {t("demolition.closingText")}
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+{/* CONTROLLED DEMOLITION */}
+<section className="bg-[#f7f9fc] py-24 px-6 md:px-20">
+  <div className="max-w-7xl mx-auto space-y-16">
+    <div className="text-center space-y-6">
+      <h2 className="text-3xl md:text-5xl font-extrabold text-[#093B5D]">{t("demolition.controlledTitle")}</h2>
+      <p className="text-gray-700 text-lg max-w-3xl mx-auto">
+        {t("demolition.controlledDesc")}
+      </p>
+    </div>
+    
+    <div className="grid md:grid-cols-2 gap-10 items-center">
+      <ul className="text-gray-800 text-[17px] space-y-3 list-disc ml-6">
+        {t("demolition.controlledList", { returnObjects: true }).map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+      <div className="grid grid-cols-2 gap-6 justify-center">
+        <img src="/تحميل.jpg" alt="Controlled Demo 1" loading="lazy" className="rounded-xl shadow-md object-cover w-full" />
+        <img src="/تحميل ونش.jpg" alt="Controlled Demo 2" loading="lazy" className="rounded-xl shadow-md object-cover w-full" />
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* DIAMOND WIRE SAWING */}
+<section className="bg-white py-24 px-6 md:px-20">
+  <div className="max-w-7xl mx-auto space-y-16">
+    <div className="text-center space-y-6">
+      <h2 className="text-3xl md:text-5xl font-extrabold text-[#093B5D]">{t("demolition.diamondTitle")}</h2>
+      <p className="text-gray-700 text-lg max-w-3xl mx-auto">
+        {t("demolition.diamondDesc")}
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-2 gap-10 items-center">
+      <ul className="text-gray-800 text-[17px] space-y-3 list-disc ml-6">
+        {t("demolition.diamondList", { returnObjects: true }).map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+      <img
+        src="/diamond wire cutting.jpg"
+        alt="Diamond Wire Sawing"
+        loading="lazy"
+        className="rounded-xl shadow-md object-cover w-full max-w-md mx-auto"
+      />
+    </div>
+  </div>
+</section>
+
+{/* ROBOTIC DEMOLITION */}
+<section className="bg-[#f1f5f9] py-24 px-6 md:px-20">
+  <div className="max-w-7xl mx-auto space-y-16">
+    <div className="text-center space-y-6">
+      <h2 className="text-3xl md:text-5xl font-extrabold text-[#093B5D]">{t("demolition.roboticTitle")}</h2>
+      <p className="text-gray-700 text-lg max-w-3xl mx-auto">
+        {t("demolition.roboticDesc")}
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-2 gap-10 items-center">
+      <ul className="text-gray-800 text-[17px] space-y-3 list-disc ml-6">
+        {t("demolition.roboticList", { returnObjects: true }).map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+      <div className="grid grid-cols-2 gap-6 justify-center">
+        <img src="/robot.jpg" alt="Brokk Robot 1" loading="lazy" className="rounded-xl shadow-md object-cover w-full" />
+        <img src="/robot1.jpg" alt="Brokk Robot 2" loading="lazy" className="rounded-xl shadow-md object-cover w-full" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+     
       {/* WHY CHOOSE CS */}
       <section ref={ref3} className="py-20 px-6 md:px-20 bg-[#1c3b8d] text-white">
         <motion.div
@@ -209,10 +454,9 @@ export default function Demolition() {
               {t("demolition.whyTitle")}
             </h2>
             <ul className="list-disc text-lg ml-5 space-y-2 text-white">
-              <li>{t("demolition.whyList.0")}</li>
-              <li>{t("demolition.whyList.1")}</li>
-              <li>{t("demolition.whyList.2")}</li>
-              <li>{t("demolition.whyList.3")}</li>
+              {t("demolition.whyList", { returnObjects: true }).map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
             </ul>
           </div>
           <img
