@@ -120,9 +120,10 @@ export default function Demolition() {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.6, delay: index * 0.1 }}
                     viewport={{ once: true }}
-                    className="flex items-start space-x-4"
+                    className={`flex items-start ${isRTL ? "space-x-reverse space-x-4" : "space-x-4"}`}
+
                   >
-                    <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-blue-600 to-orange-600 rounded-full flex items-center justify-center mt-1">
+                    <div className="flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mt-1">
                       <div className="w-3 h-3 bg-white rounded-full"></div>
                     </div>
                     <p className="text-lg text-gray-700 leading-relaxed">{item}</p>
@@ -200,7 +201,8 @@ export default function Demolition() {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: index * 0.1 }}
                     viewport={{ once: true }}
-                    className="flex items-center space-x-3 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+                    className={`flex items-center ${isRTL ? "space-x-reverse space-x-3" : "space-x-3"} p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors`}
+
                   >
                     <div className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center">
                       <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -315,9 +317,10 @@ export default function Demolition() {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.6, delay: index * 0.1 }}
                     viewport={{ once: true }}
-                    className="flex items-start space-x-4"
+                    className={`flex items-start ${isRTL ? "space-x-reverse space-x-4" : "space-x-4"}`}
+
                   >
-                    <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-blue-600 to-orange-600 rounded-full flex items-center justify-center mt-1">
+                    <div className="flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mt-1">
                       <div className="w-3 h-3 bg-white rounded-full"></div>
                     </div>
                     <p className="text-lg text-gray-300 leading-relaxed">{item}</p>
@@ -364,9 +367,10 @@ export default function Demolition() {
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.6, delay: index * 0.1 }}
                       viewport={{ once: true }}
-                      className="flex items-start space-x-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors"
+                      className={`flex items-start ${isRTL ? "space-x-reverse space-x-4" : "space-x-4"} p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors`}
+
                     >
-                      <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-blue-600 to-orange-600 rounded-full flex items-center justify-center mt-1">
+                      <div className="flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mt-1">
                         <div className="w-3 h-3 bg-white rounded-full"></div>
                       </div>
                       <p className="text-gray-700 leading-relaxed">{item}</p>
@@ -579,9 +583,9 @@ export default function Demolition() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="flex items-start space-x-4 p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors"
-                >
-                  <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-blue-600 to-orange-600 rounded-full flex items-center justify-center mt-1">
+                  className={`flex items-start ${isRTL ? "space-x-reverse space-x-4" : "space-x-4"} p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors`}
+                  >
+                  <div className="flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mt-1">
                     <div className="w-3 h-3 bg-white rounded-full"></div>
                   </div>
                   <span className="text-lg text-gray-700 font-medium">{item}</span>
@@ -646,9 +650,9 @@ export default function Demolition() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="flex items-start space-x-4 p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow"
-                >
-                  <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-blue-600 to-orange-600 rounded-full flex items-center justify-center mt-1">
+                  className={`flex items-start ${isRTL ? "space-x-reverse space-x-4" : "space-x-4"} p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow`}
+                  >
+                  <div className="flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mt-1">
                     <div className="w-3 h-3 bg-white rounded-full"></div>
                   </div>
                   <span className="text-lg text-gray-700 font-medium">{item}</span>
@@ -708,9 +712,10 @@ export default function Demolition() {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="flex items-start space-x-4 p-6 bg-white/10 rounded-xl border border-white/20 hover:bg-white/20 transition-colors"
+                  className={`flex items-start ${isRTL ? "space-x-reverse space-x-4" : "space-x-4"} p-6 bg-white/10 rounded-xl border border-white/20 hover:bg-white/20 transition-colors`}
+
                 >
-                  <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-blue-600 to-orange-600 rounded-full flex items-center justify-center mt-1">
+                  <div className="flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mt-1">
                     <div className="w-3 h-3 bg-white rounded-full"></div>
                   </div>
                   <span className="text-lg text-gray-300 font-medium">{item}</span>
@@ -779,8 +784,8 @@ export default function Demolition() {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: index * 0.1 }}
                     viewport={{ once: true }}
-                    className="flex items-center space-x-4 p-6 bg-white/10 rounded-xl border border-white/20 hover:bg-white/20 transition-colors"
-                  >
+                    className={`flex items-center ${isRTL ? "space-x-reverse space-x-4" : "space-x-4"} p-6 bg-white/10 rounded-xl border border-white/20 hover:bg-white/20 transition-colors`}
+                    >
                     <div className="flex-shrink-0 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
                       <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />

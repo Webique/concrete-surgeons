@@ -72,13 +72,34 @@ export default function StructuralRetrofitting() {
                 alt={section.title}
                 className="rounded-xl shadow-md object-cover w-full h-64 md:h-72 hover:scale-105 transition-transform duration-500"
               />
-              <div className="space-y-3 whitespace-pre-line">
+              <div className="space-y-4">
                 <h3 className="text-2xl font-bold text-[#093B5D]">
                   {section.title}
                 </h3>
-                <p className="text-gray-700 text-lg leading-relaxed">
-                  {section.desc}
-                </p>
+                <div className="space-y-3">
+                  {section.desc.split('\n').filter(line => line.trim()).map((line, index) => {
+                    // Remove bullet points and clean the text
+                    const cleanText = line.replace(/^•\s*/, '').trim();
+                    if (cleanText) {
+                      return (
+                        <motion.div
+                          key={index}
+                          initial={{ opacity: 0, x: -20 }}
+                          whileInView={{ opacity: 1, x: 0 }}
+                          transition={{ duration: 0.6, delay: index * 0.1 }}
+                          viewport={{ once: true }}
+                          className={`flex items-start ${isRTL ? "space-x-reverse space-x-4" : "space-x-4"}`}
+                        >
+                          <div className="flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mt-1">
+                            <div className="w-3 h-3 bg-white rounded-full"></div>
+                          </div>
+                          <p className="text-lg text-gray-700 leading-relaxed">{cleanText}</p>
+                        </motion.div>
+                      );
+                    }
+                    return null;
+                  })}
+                </div>
               </div>
             </motion.div>
           ))}

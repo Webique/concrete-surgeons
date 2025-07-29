@@ -97,12 +97,23 @@ export default function About() {
             <h2 className="text-3xl md:text-4xl font-bold text-[#093B5D] border-b-2 pb-2 border-[#093B5D]">
               {t("about.whyTitle")}
             </h2>
-            <ul className="grid gap-4 list-disc text-gray-700 pl-6 text-lg">
-              <li>{t("about.reason1")}</li>
-              <li>{t("about.reason2")}</li>
-              <li>{t("about.reason3")}</li>
-              <li>{t("about.reason4")}</li>
-            </ul>
+            <div className="space-y-4">
+              {[t("about.reason1"), t("about.reason2"), t("about.reason3"), t("about.reason4")].map((reason, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className={`flex items-start ${isRTL ? "space-x-reverse space-x-4" : "space-x-4"}`}
+                >
+                  <div className="flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mt-1">
+                    <div className="w-3 h-3 bg-white rounded-full"></div>
+                  </div>
+                  <p className="text-lg text-gray-700 leading-relaxed">{reason}</p>
+                </motion.div>
+              ))}
+            </div>
           </div>
           <img
             src={about2}
