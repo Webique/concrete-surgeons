@@ -86,7 +86,7 @@ export default function Demolition() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="inline-block mb-6"
             >
-              <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-orange-600 mx-auto rounded-full"></div>
+              <div className="w-20 h-1 bg-gradient-to-r from-blue-900 to-blue-900 mx-auto rounded-full"></div>
             </motion.div>
             
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-[#093B5D] mb-6">
@@ -186,7 +186,7 @@ export default function Demolition() {
                 <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-6">
                   {t("demolition.safetyTitle")}
                 </h2>
-                <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-orange-600 rounded-full"></div>
+                <div className="w-20 h-1 bg-gradient-to-r from-blue-900 to-blue-900 rounded-full"></div>
               </div>
               
               <p className="text-xl text-gray-700 leading-relaxed">
