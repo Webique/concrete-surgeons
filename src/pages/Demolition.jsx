@@ -202,7 +202,7 @@ export default function Demolition() {
                     viewport={{ once: true }}
                     className="flex items-center space-x-3 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
                   >
-                    <div className="flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                    <div className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center">
                       <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
@@ -232,7 +232,7 @@ export default function Demolition() {
                 
                 {/* Badge */}
                 <div className="absolute top-6 left-6">
-                  <span className="bg-gradient-to-r from-blue-600 to-orange-600 text-white px-6 py-3 text-sm font-bold rounded-full shadow-lg transform hover:scale-105 transition-transform">
+                  <span className="bg-gradient-to-r from-blue-600 to-blue-600 text-white px-6 py-3 text-sm font-bold rounded-full shadow-lg transform hover:scale-105 transition-transform">
                     {t("demolition.badgeSafety")}
                   </span>
                 </div>
@@ -247,7 +247,7 @@ export default function Demolition() {
         {/* Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-20 left-20 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-20 w-60 h-60 bg-orange-500/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-20 w-60 h-60 bg-blue-500/10 rounded-full blur-3xl"></div>
         </div>
 
         <div className="relative max-w-7xl mx-auto text-center space-y-16">
@@ -288,7 +288,7 @@ export default function Demolition() {
                 
                 {/* Badge */}
                 <div className="absolute top-6 left-6">
-                  <span className="bg-gradient-to-r from-blue-600 to-orange-600 text-white px-6 py-3 text-sm font-bold rounded-full shadow-lg">
+                  <span className="bg-gradient-to-r from-blue-600 to-blue-600 text-white px-6 py-3 text-sm font-bold rounded-full shadow-lg">
                     {t("demolition.badgeHighReach")}
                   </span>
                 </div>
@@ -452,10 +452,10 @@ export default function Demolition() {
                 <span className="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-full font-bold text-sm">
                   First in Gulf
                 </span>
-                <span className="px-6 py-3 bg-gradient-to-r from-orange-600 to-orange-700 text-white rounded-full font-bold text-sm">
+                <span className="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-full font-bold text-sm">
                   27m System
                 </span>
-                <span className="px-6 py-3 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-full font-bold text-sm">
+                <span className="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-full font-bold text-sm">
                   Safe Dismantling
                 </span>
               </div>
@@ -781,7 +781,7 @@ export default function Demolition() {
                     viewport={{ once: true }}
                     className="flex items-center space-x-4 p-6 bg-white/10 rounded-xl border border-white/20 hover:bg-white/20 transition-colors"
                   >
-                    <div className="flex-shrink-0 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+                    <div className="flex-shrink-0 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
                       <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
