@@ -15,456 +15,801 @@ export default function Demolition() {
   }, [t]);
 
   return (
-    <div className={`${isRTL ? "rtl text-right" : "ltr text-left"} text-black`}>
-      {/* PAGE TITLE */}
+    <div className={`${isRTL ? "rtl text-right" : "ltr text-left"} text-black overflow-hidden`}>
+      {/* HERO SECTION - Enhanced with Parallax Effect */}
       <section className="relative w-full h-[90vh] mt-[100px] overflow-hidden">
-  {/* Background Video (swapped from Home) */}
-  <video
-    className="absolute top-0 left-0 w-full h-full object-cover"
-    autoPlay
-    loop
-    muted
-    playsInline
-    preload="metadata"
-    poster="/video-thumbnail.jpg"
-  >
-    <source src="/your-video.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+        {/* Background Video with Enhanced Overlay */}
+        <video
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="metadata"
+          poster="/video-thumbnail.jpg"
+        >
+          <source src="/your-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
-  {/* Dark Overlay */}
-  <div className="absolute inset-0 bg-black/50"></div>
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/50"></div>
 
-  {/* Content */}
-  <motion.div
-    initial={{ opacity: 0, y: 50 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 1, ease: "easeOut" }}
-    className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6"
-  >
-    <motion.h1
-      initial={{ scale: 0.8, opacity: 0 }}
-      animate={{ scale: 1, opacity: 1 }}
-      transition={{ duration: 1, delay: 0.2 }}
-      className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white drop-shadow-lg"
-    >
-      {t("demolition.title")}
-    </motion.h1>
-    <motion.p
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, delay: 0.4 }}
-      className="mt-6 text-lg sm:text-xl text-gray-200 max-w-2xl mx-auto drop-shadow-md"
-    >
-      {t("demolition.subtitle")}
-    </motion.p>
-  </motion.div>
-</section>
+        {/* Content with Enhanced Animations */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.5 }}
+          className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4 sm:px-6"
+        >
+          <motion.div
+            initial={{ scale: 0.8, opacity: 0, y: 50 }}
+            animate={{ scale: 1, opacity: 1, y: 0 }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+            className="max-w-6xl mx-auto"
+          >
+            <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.3 }}
+              className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white drop-shadow-lg"
+            >
+              {t("demolition.title")}
+            </motion.h1>
+            
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.6 }}
+              className="mt-6 text-lg sm:text-xl text-gray-200 max-w-2xl mx-auto drop-shadow-md"
+            >
+              {t("demolition.subtitle")}
+            </motion.p>
+          </motion.div>
+        </motion.div>
+      </section>
 
+      {/* HIGH REACH DEMOLITION SECTION - Redesigned */}
+      <section className="relative py-20 sm:py-32 px-4 sm:px-6 lg:px-20 bg-gradient-to-br from-gray-50 via-white to-blue-50">
+        <div className="max-w-7xl mx-auto">
+          {/* Section Header with Enhanced Design */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="text-center mb-20"
+          >
+            <motion.div
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="inline-block mb-6"
+            >
+              <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-orange-600 mx-auto rounded-full"></div>
+            </motion.div>
+            
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-[#093B5D] mb-6">
+              {t("demolition.highReachTitle")}
+            </h2>
+            
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              {t("demolition.highReachSubtitle")}
+            </p>
+          </motion.div>
 
-{/* SECTION 1: Introduction & What Is It – Enhanced Design with Larger Image */}
-<section className="bg-gradient-to-b from-white via-[#f6f9fc] to-[#e9eef5] py-28 px-6 md:px-20">
-  <div className="max-w-7xl mx-auto space-y-24">
+          {/* Content Grid with Enhanced Layout */}
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            {/* Text Content */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="space-y-8"
+            >
+              <h3 className="text-3xl sm:text-4xl font-bold text-gray-900">
+                {t("demolition.whatIsTitle")}
+              </h3>
+              
+              <div className="space-y-4">
+                {t("demolition.whatIsList", { returnObjects: true }).map((item, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                    className="flex items-start space-x-4"
+                  >
+                    <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-blue-600 to-orange-600 rounded-full flex items-center justify-center mt-1">
+                      <div className="w-3 h-3 bg-white rounded-full"></div>
+                    </div>
+                    <p className="text-lg text-gray-700 leading-relaxed">{item}</p>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
 
-    {/* SECTION HEADER */}
-    <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
-      viewport={{ once: true }}
-      className="text-center"
-    >
-      <h2 className="text-4xl md:text-5xl font-extrabold text-[#093B5D]">{t("demolition.highReachTitle")}</h2>
-      <p className="text-gray-700 text-lg md:text-xl mt-6 max-w-3xl mx-auto">
-        {t("demolition.highReachSubtitle")}
-      </p>
-    </motion.div>
+            {/* Image with Enhanced Styling */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, delay: 0.5 }}
+              viewport={{ once: true }}
+              className="relative"
+            >
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <img
+                  src="/new.png"
+                  alt="High Reach Excavator"
+                  loading="lazy"
+                  className="w-full h-auto transform hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+              </div>
+              
+              {/* Floating Elements */}
+              <div className="absolute -top-4 -right-4 w-20 h-20 bg-blue-500/10 rounded-full blur-xl"></div>
+              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-orange-500/10 rounded-full blur-xl"></div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
 
-    {/* WHAT IS IT */}
-    <div className="grid md:grid-cols-12 gap-12 items-center">
-      {/* Left – Text */}
-      <div className="md:col-span-6 text-gray-800 text-[17px] leading-relaxed space-y-4">
-        <h3 className="text-2xl font-bold text-[#093B5D]">{t("demolition.whatIsTitle")}</h3>
-        <ul className="list-disc ml-5 space-y-2">
-          {t("demolition.whatIsList", { returnObjects: true }).map((item, index) => (
-            <li key={index}>{item}</li>
+      {/* SAFETY DEMOLITION SECTION - Enhanced */}
+      <section ref={ref1} className="relative py-20 sm:py-32 px-4 sm:px-6 lg:px-20 bg-white overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+          }}></div>
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 60 }}
+          animate={inView1 ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 1 }}
+          className="max-w-7xl mx-auto relative z-10"
+        >
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            {/* Text Content */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="space-y-8"
+            >
+              <div>
+                <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-6">
+                  {t("demolition.safetyTitle")}
+                </h2>
+                <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-orange-600 rounded-full"></div>
+              </div>
+              
+              <p className="text-xl text-gray-700 leading-relaxed">
+                {t("demolition.safetyDesc")}
+              </p>
+              
+              <div className="grid sm:grid-cols-2 gap-4">
+                {t("demolition.safetyList", { returnObjects: true }).map((item, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                    className="flex items-center space-x-3 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+                  >
+                    <div className="flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                      <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span className="text-gray-700 font-medium">{item}</span>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+
+            {/* Image with Enhanced Design */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, delay: 0.5 }}
+              viewport={{ once: true }}
+              className="relative"
+            >
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <img
+                  src="/demo1.png"
+                  loading="lazy"
+                  alt={t("demolition.safetyAlt")}
+                  className="w-full h-[500px] object-cover transform hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                
+                {/* Badge */}
+                <div className="absolute top-6 left-6">
+                  <span className="bg-gradient-to-r from-blue-600 to-orange-600 text-white px-6 py-3 text-sm font-bold rounded-full shadow-lg transform hover:scale-105 transition-transform">
+                    {t("demolition.badgeSafety")}
+                  </span>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </motion.div>
+      </section>
+
+      {/* HIGH-REACH DEMOLITION VIDEO SECTION - Enhanced */}
+      <section className="relative py-20 sm:py-32 px-4 sm:px-6 lg:px-20 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-20 left-20 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-20 w-60 h-60 bg-orange-500/10 rounded-full blur-3xl"></div>
+        </div>
+
+        <div className="relative max-w-7xl mx-auto text-center space-y-16">
+          {/* Title */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-white mb-6">
+              {t("demolition.toolsTitle")}
+            </h2>
+            <p className="text-xl sm:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+              {t("demolition.toolsDesc")}
+            </p>
+          </motion.div>
+
+          {/* Video + Details */}
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            {/* Video */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true }}
+              className="relative"
+            >
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20">
+                <video
+                  className="w-full h-full object-cover"
+                  src="/demovid.mp4"
+                  controls
+                  playsInline
+                  preload="metadata"
+                  loading="lazy"
+                ></video>
+                
+                {/* Badge */}
+                <div className="absolute top-6 left-6">
+                  <span className="bg-gradient-to-r from-blue-600 to-orange-600 text-white px-6 py-3 text-sm font-bold rounded-full shadow-lg">
+                    {t("demolition.badgeHighReach")}
+                  </span>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Technical Details */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="space-y-8 text-left"
+            >
+              <h3 className="text-3xl sm:text-4xl font-bold text-white">
+                {t("demolition.toolsHighlightTitle")}
+              </h3>
+              
+              <div className="space-y-6">
+                {t("demolition.toolsExtra", { returnObjects: true }).map((item, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                    className="flex items-start space-x-4"
+                  >
+                    <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-blue-600 to-orange-600 rounded-full flex items-center justify-center mt-1">
+                      <div className="w-3 h-3 bg-white rounded-full"></div>
+                    </div>
+                    <p className="text-lg text-gray-300 leading-relaxed">{item}</p>
+                  </motion.div>
+                ))}
+              </div>
+              
+              <div className="p-6 bg-white/10 rounded-xl border border-white/20">
+                <p className="text-gray-300 italic text-lg">
+                  {t("demolition.toolsNote")}
+                </p>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* ATTACHMENTS SECTION - Enhanced */}
+      <section className="py-20 sm:py-32 px-4 sm:px-6 lg:px-20 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="bg-white rounded-3xl shadow-2xl p-8 sm:p-12 overflow-hidden">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+              {/* Text Content */}
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+                viewport={{ once: true }}
+                className="space-y-8"
+              >
+                <h3 className="text-3xl sm:text-4xl font-bold text-gray-900">
+                  {t("demolition.attachmentsTitle")}
+                </h3>
+                
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  {t("demolition.attachmentsDesc")}
+                </p>
+                
+                <div className="space-y-4">
+                  {t("demolition.attachmentsList", { returnObjects: true }).map((item, index) => (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, x: -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.6, delay: index * 0.1 }}
+                      viewport={{ once: true }}
+                      className="flex items-start space-x-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors"
+                    >
+                      <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-blue-600 to-orange-600 rounded-full flex items-center justify-center mt-1">
+                        <div className="w-3 h-3 bg-white rounded-full"></div>
+                      </div>
+                      <p className="text-gray-700 leading-relaxed">{item}</p>
+                    </motion.div>
+                  ))}
+                </div>
+              </motion.div>
+
+              {/* Image Grid */}
+              <motion.div
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="grid grid-cols-3 gap-4"
+              >
+                {["/neww1.png", "/new2.png", "/new3.png"].map((src, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.6, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                    className="relative group"
+                  >
+                    <img
+                      src={src}
+                      alt={`Attachment ${index + 1}`}
+                      loading="lazy"
+                      className="w-full h-auto rounded-xl shadow-lg transform group-hover:scale-110 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  </motion.div>
+                ))}
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* PIONEERING SECTION - Enhanced */}
+      <section className="py-20 sm:py-32 px-4 sm:px-6 lg:px-20 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-3 items-center gap-12 lg:gap-16">
+            {/* Image */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true }}
+              className="lg:col-span-1 flex justify-center"
+            >
+              <div className="relative">
+                <img
+                  src="/neww2.png"
+                  alt="Pioneering Equipment"
+                  loading="lazy"
+                  className="w-64 h-auto rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute -top-4 -right-4 w-20 h-20 bg-blue-500/20 rounded-full blur-xl"></div>
+                <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-orange-500/20 rounded-full blur-xl"></div>
+              </div>
+            </motion.div>
+            
+            {/* Text */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="lg:col-span-2 space-y-6"
+            >
+              <h3 className="text-3xl sm:text-4xl font-bold text-gray-900">
+                {t("demolition.pioneeringTitle")}
+              </h3>
+              
+              <p className="text-xl text-gray-700 leading-relaxed">
+                {t("demolition.pioneeringDesc")}
+              </p>
+              
+              {/* Achievement Badges */}
+              <div className="flex flex-wrap gap-4 mt-8">
+                <span className="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-full font-bold text-sm">
+                  First in Gulf
+                </span>
+                <span className="px-6 py-3 bg-gradient-to-r from-orange-600 to-orange-700 text-white rounded-full font-bold text-sm">
+                  27m System
+                </span>
+                <span className="px-6 py-3 bg-gradient-to-r from-green-600 to-green-700 text-white rounded-full font-bold text-sm">
+                  Safe Dismantling
+                </span>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* SUPPORTING IMAGES SECTION - Enhanced */}
+      <section className="py-20 sm:py-32 px-4 sm:px-6 lg:px-20 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div className="max-w-7xl mx-auto space-y-20">
+          {/* Image + Text Blocks */}
+          {[
+            {
+              img: "/new5.png",
+              title: t("demolition.urbanTitle"),
+              desc: t("demolition.urbanDesc"),
+              reverse: false
+            },
+            {
+              img: "/new6.png",
+              title: t("demolition.machineryTitle"),
+              desc: t("demolition.machineryDesc"),
+              reverse: true
+            },
+            {
+              img: "/new7.png",
+              title: t("demolition.monitoringTitle"),
+              desc: t("demolition.monitoringDesc"),
+              reverse: false
+            }
+          ].map((block, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: index * 0.2 }}
+              viewport={{ once: true }}
+              className={`grid lg:grid-cols-2 gap-12 lg:gap-16 items-center ${
+                block.reverse ? "lg:flex-row-reverse" : ""
+              }`}
+            >
+              <div className={`${block.reverse ? "lg:order-2" : ""}`}>
+                <div className="relative">
+                  <img
+                    src={block.img}
+                    alt={block.title}
+                    loading="lazy"
+                    className="w-full max-w-md mx-auto rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
+                </div>
+              </div>
+              
+              <div className={`${block.reverse ? "lg:order-1" : ""} space-y-6`}>
+                <h4 className="text-2xl sm:text-3xl font-bold text-gray-900">
+                  {block.title}
+                </h4>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  {block.desc}
+                </p>
+              </div>
+            </motion.div>
           ))}
-        </ul>
-      </div>
 
-      {/* Right – Larger Image */}
-      <div className="md:col-span-6 text-center">
-        <img
-          src="/new.png"
-          alt="High Reach Excavator"
-          loading="lazy"
-          className="w-full max-w-xl mx-auto rounded-xl shadow-md border border-gray-200 bg-white p-3"
-        />
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-      {/* SAFETY DEMOLITION */}
-<section ref={ref1} className="relative py-24 px-6 md:px-20 bg-white">
-  <motion.div
-    initial={{ opacity: 0, y: 60 }}
-    animate={inView1 ? { opacity: 1, y: 0 } : {}}
-    transition={{ duration: 0.8 }}
-    className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center"
-  >
-    <div className="space-y-6">
-      <h2 className="text-4xl font-extrabold text-[#093B5D] relative">
-        {t("demolition.safetyTitle")}
-        <span className="block h-1 w-20 bg-[#093B5D] mt-3 rounded-full"></span>
-      </h2>
-      <p className="text-gray-700 text-lg leading-relaxed">
-        {t("demolition.safetyDesc")}
-      </p>
-      <ul className="list-disc ml-5 text-gray-700 text-lg space-y-1">
-        {t("demolition.safetyList", { returnObjects: true }).map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
-    </div>
-    <div className="relative">
-      <img
-        src="/demo1.png"
-        loading="lazy" // ✅ lazy load
-        alt={t("demolition.safetyAlt")}
-        className="w-full h-[400px] object-cover rounded-xl shadow-xl"
-      />
-      <span className="absolute top-4 left-4 bg-[#093B5D] text-white px-4 py-1 text-sm rounded shadow-md">
-        {t("demolition.badgeSafety")}
-      </span>
-    </div>
-  </motion.div>
-</section>
-
-
-
-
-
-
-     {/* HIGH-REACH DEMOLITION – PREMIUM EMPHASIS */}
-     <section className="relative py-28 px-6 md:px-20 bg-[#F0F2F5] overflow-hidden">
-  <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-[#F0F2F5] to-[#E4E6E9]"></div>
-
-  <div className="relative max-w-7xl mx-auto text-center space-y-12">
-    {/* Title */}
-    <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
-      viewport={{ once: true }}
-    >
-      <h2 className="text-4xl md:text-5xl font-extrabold text-[#093B5D]">
-        {t("demolition.toolsTitle")}
-      </h2>
-      <p className="text-gray-700 text-lg md:text-xl max-w-3xl mx-auto mt-6">
-        {t("demolition.toolsDesc")}
-      </p>
-    </motion.div>
-
-    {/* Video + Details */}
-    <div className="grid md:grid-cols-2 gap-10 items-center mt-10">
-      {/* Video */}
-      <motion.div
-        initial={{ opacity: 0, x: -50 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-        className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200"
-      >
-       <video
-  className="w-full h-full object-cover"
-  src="/demovid.mp4"
-  controls
-  playsInline
-  preload="metadata"
-  loading="lazy" // ✅ lazy load
-></video>
-
-
-        <div className="absolute top-4 left-4 bg-[#093B5D] text-white text-sm px-4 py-1 rounded shadow-md">
-          {t("demolition.badgeHighReach")}
+          {/* Final Closing */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="text-center space-y-12 pt-16"
+          >
+            <div className="relative">
+              <img
+                src="/new8.png"
+                alt="Concrete Surgeons"
+                loading="lazy"
+                className="mx-auto w-full max-w-lg rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
+            </div>
+            
+            <p className="text-xl sm:text-2xl text-gray-700 leading-relaxed max-w-4xl mx-auto">
+              {t("demolition.closingText")}
+            </p>
+          </motion.div>
         </div>
-      </motion.div>
+      </section>
 
-      {/* Technical Details */}
-      <motion.div
-        initial={{ opacity: 0, x: 50 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-        className="space-y-5 text-left"
-      >
-        <h3 className="text-2xl font-bold text-[#093B5D]">
-          {t("demolition.toolsHighlightTitle")}
-        </h3>
-        <ul className="list-disc text-gray-700 text-lg ml-5 space-y-2">
-          {t("demolition.toolsExtra", { returnObjects: true }).map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
-        <p className="text-gray-600 mt-4 italic">
-          {t("demolition.toolsNote")}
-        </p>
-      </motion.div>
-    </div>
-  </div>
-</section>
-{/* SECTION 2: Attachments & Pioneering – Elegant Design */}
-<section className="bg-[#f7f9fc] py-24 px-6 md:px-20">
-  <div className="max-w-6xl mx-auto space-y-24">
-
-   {/* ATTACHMENTS BLOCK – with Multiple Tools */}
-<div className="bg-white p-8 rounded-2xl shadow-md border border-gray-100">
-  <div className="grid md:grid-cols-12 gap-10 items-center">
-
-    {/* Text Content */}
-    <div className="md:col-span-6 text-gray-800 text-[17px] leading-relaxed space-y-4">
-      <h3 className="text-2xl font-bold text-[#093B5D]">{t("demolition.attachmentsTitle")}</h3>
-      <p>
-        {t("demolition.attachmentsDesc")}
-      </p>
-      <ul className="list-disc ml-5 space-y-2">
-        {t("demolition.attachmentsList", { returnObjects: true }).map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
-    </div>
-
-    {/* Image Row */}
-    <div className="md:col-span-6">
-      <div className="flex flex-wrap justify-center gap-6 mt-6 md:mt-0">
-        <img
-          src="/neww1.png"
-          alt="Pulverizer"
-          loading="lazy"
-          className="w-[100px] h-auto rounded-md shadow-sm"
-        />
-        <img
-          src="/new2.png"
-          alt="Steel Shear"
-          loading="lazy"
-          className="w-[100px] h-auto rounded-md shadow-sm"
-        />
-        <img
-          src="/new3.png"
-          alt="Crusher"
-          loading="lazy"
-          className="w-[100px] h-auto rounded-md shadow-sm"
-        />
-      </div>
-    </div>
-
-  </div>
-</div>
-
-    {/* PIONEERING BLOCK */}
-    <div className="grid md:grid-cols-12 items-center gap-8">
-      {/* Image */}
-      <div className="md:col-span-4 text-center">
-        <img
-          src="/neww2.png"
-          alt="Pioneering Equipment"
-          loading="lazy"
-          className="w-[180px] h-auto mx-auto rounded-lg shadow-sm"
-        />
-      </div>
-      {/* Text */}
-      <div className="md:col-span-8 text-gray-800 text-[17px] leading-relaxed">
-        <h3 className="text-2xl font-bold text-[#093B5D] mb-4">{t("demolition.pioneeringTitle")}</h3>
-        <p>
-          {t("demolition.pioneeringDesc")}
-        </p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-{/* SECTION 3: Supporting Images & Final Closing */}
-<section className="bg-[#e9ecf1] py-28 px-6 md:px-20">
-  <div className="max-w-7xl mx-auto space-y-24">
-
-    {/* SUPPORTING IMAGES – Premium Alternating Layout */}
-    <div className="space-y-20">
-
-      {/* Image + Text Block 1 */}
-      <div className="grid md:grid-cols-12 gap-8 items-center">
-        <div className="md:col-span-5">
-          <img
-            src="/new5.png"
-            alt="Urban Precision"
-            loading="lazy"
-            className="rounded-xl w-full max-w-sm mx-auto shadow-md object-cover"
-          />
+      {/* CONTROLLED DEMOLITION SECTION - Enhanced */}
+      <section className="py-20 sm:py-32 px-4 sm:px-6 lg:px-20 bg-white">
+        <div className="max-w-7xl mx-auto space-y-16">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="text-center space-y-8"
+          >
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900">
+              {t("demolition.controlledTitle")}
+            </h2>
+            <p className="text-xl sm:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              {t("demolition.controlledDesc")}
+            </p>
+          </motion.div>
+          
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center"
+          >
+            <div className="space-y-6">
+              {t("demolition.controlledList", { returnObjects: true }).map((item, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="flex items-start space-x-4 p-6 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors"
+                >
+                  <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-blue-600 to-orange-600 rounded-full flex items-center justify-center mt-1">
+                    <div className="w-3 h-3 bg-white rounded-full"></div>
+                  </div>
+                  <span className="text-lg text-gray-700 font-medium">{item}</span>
+                </motion.div>
+              ))}
+            </div>
+            
+            <div className="grid grid-cols-2 gap-6">
+              {["/تحميل.jpg", "/تحميل ونش.jpg"].map((src, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="relative group"
+                >
+                  <img
+                    src={src}
+                    alt={`Controlled Demo ${index + 1}`}
+                    loading="lazy"
+                    className="w-full h-64 object-cover rounded-2xl shadow-lg transform group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
         </div>
-        <div className="md:col-span-7 text-gray-700 text-lg leading-relaxed">
-          <h4 className="text-xl font-semibold text-[#093B5D] mb-2">{t("demolition.urbanTitle")}</h4>
-          {t("demolition.urbanDesc")}
+      </section>
+
+      {/* DIAMOND WIRE SAWING SECTION - Enhanced */}
+      <section className="py-20 sm:py-32 px-4 sm:px-6 lg:px-20 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div className="max-w-7xl mx-auto space-y-16">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="text-center space-y-8"
+          >
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900">
+              {t("demolition.diamondTitle")}
+            </h2>
+            <p className="text-xl sm:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              {t("demolition.diamondDesc")}
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center"
+          >
+            <div className="space-y-6">
+              {t("demolition.diamondList", { returnObjects: true }).map((item, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="flex items-start space-x-4 p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+                >
+                  <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-blue-600 to-orange-600 rounded-full flex items-center justify-center mt-1">
+                    <div className="w-3 h-3 bg-white rounded-full"></div>
+                  </div>
+                  <span className="text-lg text-gray-700 font-medium">{item}</span>
+                </motion.div>
+              ))}
+            </div>
+            
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1, delay: 0.5 }}
+              viewport={{ once: true }}
+              className="relative"
+            >
+              <img
+                src="/diamond wire cutting.jpg"
+                alt="Diamond Wire Sawing"
+                loading="lazy"
+                className="w-full max-w-lg mx-auto rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
+            </motion.div>
+          </motion.div>
         </div>
-      </div>
+      </section>
 
-      {/* Block 2 */}
-      <div className="grid md:grid-cols-12 gap-8 items-center">
-        <div className="md:col-span-7 text-gray-700 text-lg leading-relaxed order-2 md:order-1">
-          <h4 className="text-xl font-semibold text-[#093B5D] mb-2">{t("demolition.machineryTitle")}</h4>
-          {t("demolition.machineryDesc")}
+      {/* ROBOTIC DEMOLITION SECTION - Enhanced */}
+      <section className="py-20 sm:py-32 px-4 sm:px-6 lg:px-20 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900">
+        <div className="max-w-7xl mx-auto space-y-16">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="text-center space-y-8"
+          >
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-white">
+              {t("demolition.roboticTitle")}
+            </h2>
+            <p className="text-xl sm:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+              {t("demolition.roboticDesc")}
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center"
+          >
+            <div className="space-y-6">
+              {t("demolition.roboticList", { returnObjects: true }).map((item, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="flex items-start space-x-4 p-6 bg-white/10 rounded-xl border border-white/20 hover:bg-white/20 transition-colors"
+                >
+                  <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-blue-600 to-orange-600 rounded-full flex items-center justify-center mt-1">
+                    <div className="w-3 h-3 bg-white rounded-full"></div>
+                  </div>
+                  <span className="text-lg text-gray-300 font-medium">{item}</span>
+                </motion.div>
+              ))}
+            </div>
+            
+            <div className="grid grid-cols-2 gap-6">
+              {["/robot.jpg", "/robot1.jpg"].map((src, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="relative group"
+                >
+                  <img
+                    src={src}
+                    alt={`Brokk Robot ${index + 1}`}
+                    loading="lazy"
+                    className="w-full h-64 object-cover rounded-2xl shadow-2xl transform group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
         </div>
-        <div className="md:col-span-5 order-1 md:order-2">
-          <img
-            src="/new6.png"
-            alt="Custom Equipment"
-            loading="lazy"
-            className="rounded-xl w-full max-w-sm mx-auto shadow-md object-cover"
-          />
+      </section>
+
+      {/* WHY CHOOSE CS SECTION - Enhanced */}
+      <section ref={ref3} className="py-20 sm:py-32 px-4 sm:px-6 lg:px-20 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 relative overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-20 left-20 w-60 h-60 bg-white/5 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-20 w-80 h-80 bg-orange-500/10 rounded-full blur-3xl"></div>
         </div>
-      </div>
 
-      {/* Block 3 */}
-      <div className="grid md:grid-cols-12 gap-8 items-center">
-        <div className="md:col-span-5">
-          <img
-            src="/new7.png"
-            alt="Real-Time Monitoring"
-            loading="lazy"
-            className="rounded-xl w-full max-w-sm mx-auto shadow-md object-cover"
-          />
-        </div>
-        <div className="md:col-span-7 text-gray-700 text-lg leading-relaxed">
-          <h4 className="text-xl font-semibold text-[#093B5D] mb-2">{t("demolition.monitoringTitle")}</h4>
-          {t("demolition.monitoringDesc")}
-        </div>
-      </div>
-
-    </div>
-
-    {/* FINAL CLOSING */}
-    <div className="text-center space-y-10 pt-16">
-      <img
-        src="/new8.png"
-        alt="Concrete Surgeons"
-        loading="lazy"
-        className="mx-auto w-full max-w-md rounded-xl shadow-md"
-      />
-      <p className="text-base md:text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto">
-        {t("demolition.closingText")}
-      </p>
-    </div>
-
-  </div>
-</section>
-
-
-{/* CONTROLLED DEMOLITION */}
-<section className="bg-[#f7f9fc] py-24 px-6 md:px-20">
-  <div className="max-w-7xl mx-auto space-y-16">
-    <div className="text-center space-y-6">
-      <h2 className="text-3xl md:text-5xl font-extrabold text-[#093B5D]">{t("demolition.controlledTitle")}</h2>
-      <p className="text-gray-700 text-lg max-w-3xl mx-auto">
-        {t("demolition.controlledDesc")}
-      </p>
-    </div>
-    
-    <div className="grid md:grid-cols-2 gap-10 items-center">
-      <ul className="text-gray-800 text-[17px] space-y-3 list-disc ml-6">
-        {t("demolition.controlledList", { returnObjects: true }).map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
-      <div className="grid grid-cols-2 gap-6 justify-center">
-        <img src="/تحميل.jpg" alt="Controlled Demo 1" loading="lazy" className="rounded-xl shadow-md object-cover w-full" />
-        <img src="/تحميل ونش.jpg" alt="Controlled Demo 2" loading="lazy" className="rounded-xl shadow-md object-cover w-full" />
-      </div>
-    </div>
-  </div>
-</section>
-
-{/* DIAMOND WIRE SAWING */}
-<section className="bg-white py-24 px-6 md:px-20">
-  <div className="max-w-7xl mx-auto space-y-16">
-    <div className="text-center space-y-6">
-      <h2 className="text-3xl md:text-5xl font-extrabold text-[#093B5D]">{t("demolition.diamondTitle")}</h2>
-      <p className="text-gray-700 text-lg max-w-3xl mx-auto">
-        {t("demolition.diamondDesc")}
-      </p>
-    </div>
-
-    <div className="grid md:grid-cols-2 gap-10 items-center">
-      <ul className="text-gray-800 text-[17px] space-y-3 list-disc ml-6">
-        {t("demolition.diamondList", { returnObjects: true }).map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
-      <img
-        src="/diamond wire cutting.jpg"
-        alt="Diamond Wire Sawing"
-        loading="lazy"
-        className="rounded-xl shadow-md object-cover w-full max-w-md mx-auto"
-      />
-    </div>
-  </div>
-</section>
-
-{/* ROBOTIC DEMOLITION */}
-<section className="bg-[#f1f5f9] py-24 px-6 md:px-20">
-  <div className="max-w-7xl mx-auto space-y-16">
-    <div className="text-center space-y-6">
-      <h2 className="text-3xl md:text-5xl font-extrabold text-[#093B5D]">{t("demolition.roboticTitle")}</h2>
-      <p className="text-gray-700 text-lg max-w-3xl mx-auto">
-        {t("demolition.roboticDesc")}
-      </p>
-    </div>
-
-    <div className="grid md:grid-cols-2 gap-10 items-center">
-      <ul className="text-gray-800 text-[17px] space-y-3 list-disc ml-6">
-        {t("demolition.roboticList", { returnObjects: true }).map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
-      <div className="grid grid-cols-2 gap-6 justify-center">
-        <img src="/robot.jpg" alt="Brokk Robot 1" loading="lazy" className="rounded-xl shadow-md object-cover w-full" />
-        <img src="/robot1.jpg" alt="Brokk Robot 2" loading="lazy" className="rounded-xl shadow-md object-cover w-full" />
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-     
-      {/* WHY CHOOSE CS */}
-      <section ref={ref3} className="py-20 px-6 md:px-20 bg-[#1c3b8d] text-white">
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           animate={inView3 ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
-          className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center"
+          transition={{ duration: 1 }}
+          className="max-w-7xl mx-auto relative z-10"
         >
-          <div className="space-y-6">
-            <h2 className="text-3xl font-bold border-b-2 pb-2 border-white/40">
-              {t("demolition.whyTitle")}
-            </h2>
-            <ul className="list-disc text-lg ml-5 space-y-2 text-white">
-              {t("demolition.whyList", { returnObjects: true }).map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="space-y-8"
+            >
+              <div>
+                <h2 className="text-4xl sm:text-5xl font-black text-white mb-6">
+                  {t("demolition.whyTitle")}
+                </h2>
+                <div className="w-20 h-1 bg-gradient-to-r from-orange-400 to-orange-600 rounded-full"></div>
+              </div>
+              
+              <div className="grid sm:grid-cols-2 gap-6">
+                {t("demolition.whyList", { returnObjects: true }).map((item, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                    className="flex items-center space-x-4 p-6 bg-white/10 rounded-xl border border-white/20 hover:bg-white/20 transition-colors"
+                  >
+                    <div className="flex-shrink-0 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+                      <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <span className="text-white font-medium">{item}</span>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+            
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, delay: 0.5 }}
+              viewport={{ once: true }}
+              className="relative"
+            >
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20">
+                <img
+                  src="/demo3.png"
+                  alt={t("demolition.whyAlt")}
+                  loading="lazy"
+                  className="w-full h-[500px] object-cover transform hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+              </div>
+            </motion.div>
           </div>
-          <img
-            src="/demo3.png"
-            alt={t("demolition.whyAlt")}
-            loading="lazy" // ✅ lazy load
-            className="w-full h-[400px] object-cover rounded-xl shadow-lg"
-          />
         </motion.div>
       </section>
     </div>
