@@ -10,7 +10,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Demolition from './pages/Demolition';
 import ConcreteCutting from './pages/ConcreteCutting';
-import Contact from './pages/Contact'; // ✅ Added
+import Contact from './pages/Contact';
+import CaseStudies from './pages/CaseStudies';
 
 function App() {
   const { i18n } = useTranslation();
@@ -32,6 +33,7 @@ function App() {
           <Route path="/services/demolition" element={<Demolition />} />
           <Route path="/services/cutting" element={<ConcreteCutting />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/case-studies" element={<CaseStudies />} />
         </Routes>
         <Footer />
       </div>

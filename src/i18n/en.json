@@ -3,6 +3,7 @@
   "home": "Home",
   "about": "About",
   "services": "Services",
+  "caseStudies": "Case Studies",
   "contact": "Contact",
   "demolition": "Demolition",
   "cutting": "Structural Retrofitting"
@@ -245,6 +246,61 @@
         "message": "Message",
         "submit": "Send Message",
         "mapTitle": "Our Location"
+      },
+
+      "caseStudies": {
+        "title": "Case Studies | Concrete Surgeons",
+        "heroTitle": "Our Success Stories",
+        "heroSubtitle": "Discover how we've delivered exceptional results across Egypt and the Gulf region.",
+        "case1": {
+          "badge": "Pioneering Technology",
+          "title": "Pioneering High-Reach Demolition at GSK Pharmaceutical – El Salam City",
+          "overviewTitle": "Project Overview",
+          "overview": "At the GSK pharmaceutical facility in El Salam City, our team successfully completed the controlled demolition of two industrial buildings using a technique that had never before been introduced in Egypt or the Gulf region.",
+          "challengeTitle": "Challenge",
+          "challenge": "The demolition took place in a highly sensitive pharmaceutical site where operations were ongoing. Key challenges included:",
+          "challenges": [
+            "Working in close proximity to critical infrastructure",
+            "Ensuring non-disruptive execution in a live industrial environment",
+            "Maintaining exceptional safety and environmental standards"
+          ],
+          "solutionTitle": "Innovative Solution",
+          "solution": "For the first time in the region, we deployed a High-Reach Demolition Excavator with the following capabilities:",
+          "capabilities": [
+            "Maximum reach: 27 meters vertical height",
+            "Multiple attachments: Including hydraulic breakers and concrete crushers",
+            "Enhanced safety: Stability monitoring, controlled debris management, and reduced dust and noise emissions"
+          ],
+          "resultsTitle": "Results",
+          "results": [
+            "Zero incidents recorded throughout the operation",
+            "Introduced a new standard of controlled demolition in industrial zones",
+            "First-ever use of 27m high-reach technology in Egypt and the Gulf"
+          ]
+        },
+        "case2": {
+          "badge": "World-Class Project",
+          "title": "One of the World's Largest Concrete Cutting Projects – Damietta Port Quay",
+          "overviewTitle": "Project Overview",
+          "overview": "In partnership with PETROJET, our team successfully executed one of the largest concrete cutting operations in the world, involving the cutting of the quay structure at Damietta Port using advanced diamond wire saw technology. This landmark project reinforced our reputation as a regional leader in specialized concrete cutting and structural modification.",
+          "technologyTitle": "Advanced Technology",
+          "technology": "This project utilized state-of-the-art diamond wire saw technology, enabling precise cutting of massive concrete structures while maintaining structural integrity and operational safety within an active marine environment.",
+          "scopeTitle": "Project Scope",
+          "scope": [
+            "Large-scale structural modifications at an active port facility",
+            "Precision cutting of reinforced concrete quay structures",
+            "Implementation of high-strength anchoring systems",
+            "Maintenance of port operations throughout the project"
+          ],
+          "achievementTitle": "Achievement",
+          "achievement": "This landmark project established new benchmarks for concrete cutting operations in marine environments, demonstrating our capability to handle complex structural modifications while maintaining operational continuity in critical infrastructure.",
+          "videoCaption": "Watch the Damietta Port concrete cutting project in action"
+        },
+        "cta": {
+          "title": "Ready to Start Your Project?",
+          "description": "Let's discuss how our expertise can deliver exceptional results for your next demolition, cutting, or structural modification project.",
+          "button": "Get a Quote"
+        }
       }
 }
 

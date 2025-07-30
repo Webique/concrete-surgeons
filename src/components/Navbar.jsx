@@ -50,6 +50,7 @@ const Navbar = () => {
         { path: '/services/cutting', label: t('nav.cutting') },
       ],
     },
+    { path: '/case-studies', label: t('nav.caseStudies') },
     { path: '/contact', label: t('nav.contact') },
   ];
 
