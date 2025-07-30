@@ -11,6 +11,7 @@ import casestudy2_1 from "/casestudy2-1.jpg";
 import casestudy2_2 from "/casestudy2-2.jpg";
 import casestudy2_3 from "/casestudy2-3.jpg";
 import images from "/images.jpeg";
+import results from "/results.jpeg";
 
 export default function CaseStudies() {
   const { t, i18n } = useTranslation();
@@ -111,15 +112,25 @@ export default function CaseStudies() {
               </div>
             </div>
 
-            {/* Image */}
+            {/* Images */}
             <div className={`${isRTL ? "lg:order-1" : "lg:order-2"}`}>
-              <div className="relative">
-                <img
-                  src={casestudy1}
-                  alt="GSK High-Reach Demolition"
-                  className="w-full h-80 object-cover rounded-lg shadow-2xl"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
+              <div className="space-y-6">
+                <div className="relative">
+                  <img
+                    src={casestudy1}
+                    alt="GSK High-Reach Demolition"
+                    className="w-full h-80 object-cover rounded-lg shadow-2xl"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
+                </div>
+                <div className="relative">
+                  <img
+                    src={results}
+                    alt="GSK Project Results and Statistics"
+                    className="w-full h-80 object-cover rounded-lg shadow-2xl"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
+                </div>
               </div>
             </div>
           </motion.div>
