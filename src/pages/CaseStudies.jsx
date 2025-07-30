@@ -127,7 +127,7 @@ export default function CaseStudies() {
                   <img
                     src={results}
                     alt="GSK Project Results and Statistics"
-                    className="w-full h-80 object-cover rounded-lg shadow-2xl"
+                    className="w-full h-80 object-contain sm:object-cover rounded-lg shadow-2xl"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
                 </div>
