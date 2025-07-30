@@ -59,8 +59,8 @@ export default function CaseStudies() {
             <div className={`${isRTL ? "lg:order-2" : "lg:order-1"}`}>
               <div className="mb-8">
                 <div className="flex items-center mb-6">
-                  <img src={client8} alt="GSK Logo" className="h-16 w-auto mr-4" />
-                  <div>
+                <img src={client8} alt="GSK Logo" className={`h-16 w-auto ${isRTL ? 'ml-4' : 'mr-4'}`} />
+                <div>
                     <span className="inline-block bg-orange-100 text-orange-800 text-sm font-semibold px-3 py-1 rounded-full mb-2">
                       {t("caseStudies.case1.badge")}
                     </span>
