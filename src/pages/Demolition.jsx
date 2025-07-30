@@ -26,7 +26,7 @@ export default function Demolition() {
           muted
           playsInline
           preload="metadata"
-          poster="/demohero.jpeg"
+          poster="/1111.png"
         >
           <source src="/your-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
