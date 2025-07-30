@@ -26,7 +26,7 @@ export default function Demolition() {
           muted
           playsInline
           preload="metadata"
-          poster="/video-thumbnail.jpg"
+          poster="/demohero.jpeg"
         >
           <source src="/your-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -286,6 +286,7 @@ export default function Demolition() {
                   playsInline
                   preload="metadata"
                   loading="lazy"
+                  poster="/demo1.png"
                 ></video>
                 
                 {/* Badge */}
