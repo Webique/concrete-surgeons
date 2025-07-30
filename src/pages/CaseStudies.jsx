@@ -139,9 +139,12 @@ export default function CaseStudies() {
             {/* Content - Always First on Mobile */}
             <div className="order-1 lg:order-2">
               <div className="mb-8">
-                <div className="flex items-center mb-6">
-                  <img src={images} alt="Damietta Port Logo" className="h-16 w-auto mr-4" />
-                  <div>
+                <div className="flex flex-col lg:flex-row items-center mb-6">
+                  <div className="flex items-center mb-4 lg:mb-0 lg:mr-6">
+                    <img src={images} alt="Damietta Port Logo" className="h-16 w-auto mr-4" />
+                    <img src={client1} alt="PETROJET Logo" className="h-16 w-auto" />
+                  </div>
+                  <div className="lg:flex-1">
                     <span className="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full mb-2">
                       {t("caseStudies.case2.badge")}
                     </span>
@@ -204,9 +207,6 @@ export default function CaseStudies() {
                     alt="Damietta Port Project"
                     className="w-full h-48 object-cover rounded-lg shadow-lg"
                   />
-                  <div className="bg-white p-4 rounded-lg shadow-lg h-48 flex items-center justify-center">
-                    <img src={client1} alt="PETROJET Logo" className="h-12 w-auto" />
-                  </div>
                 </div>
               </div>
               
