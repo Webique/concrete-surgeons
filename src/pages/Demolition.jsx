@@ -618,70 +618,9 @@ export default function Demolition() {
         </div>
       </section>
 
-      {/* DIAMOND WIRE SAWING SECTION - Enhanced */}
-      <section className="py-20 sm:py-32 px-4 sm:px-6 lg:px-20 bg-gradient-to-br from-gray-50 to-blue-50">
-        <div className="max-w-7xl mx-auto space-y-16">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-            className="text-center space-y-8"
-          >
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900">
-              {t("demolition.diamondTitle")}
-            </h2>
-            <p className="text-xl sm:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              {t("demolition.diamondDesc")}
-            </p>
-          </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.3 }}
-            viewport={{ once: true }}
-            className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center"
-          >
-            <div className="space-y-6">
-              {t("demolition.diamondList", { returnObjects: true }).map((item, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className={`flex items-start ${isRTL ? "space-x-reverse space-x-4" : "space-x-4"} p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow`}
-                  >
-                  <div className="flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mt-1">
-                    <div className="w-3 h-3 bg-white rounded-full"></div>
-                  </div>
-                  <span className="text-lg text-gray-700 font-medium">{item}</span>
-                </motion.div>
-              ))}
-            </div>
-            
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1, delay: 0.5 }}
-              viewport={{ once: true }}
-              className="relative"
-            >
-              <img
-                src="/diamond wire cutting.jpg"
-                alt="Diamond Wire Sawing"
-                loading="lazy"
-                className="w-full max-w-lg mx-auto rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* ROBOTIC DEMOLITION SECTION - Enhanced */}
-      <section className="py-20 sm:py-32 px-4 sm:px-6 lg:px-20 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900">
+        {/* ROBOTIC DEMOLITION SECTION - Enhanced */}
+        <section className="py-20 sm:py-32 px-4 sm:px-6 lg:px-20 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900">
         <div className="max-w-7xl mx-auto space-y-16">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -747,6 +686,70 @@ export default function Demolition() {
           </motion.div>
         </div>
       </section>
+
+      {/* DIAMOND WIRE SAWING SECTION - Enhanced */}
+      <section className="py-20 sm:py-32 px-4 sm:px-6 lg:px-20 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div className="max-w-7xl mx-auto space-y-16">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+            className="text-center space-y-8"
+          >
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-gray-900">
+              {t("demolition.diamondTitle")}
+            </h2>
+            <p className="text-xl sm:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              {t("demolition.diamondDesc")}
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center"
+          >
+            <div className="space-y-6">
+              {t("demolition.diamondList", { returnObjects: true }).map((item, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className={`flex items-start ${isRTL ? "space-x-reverse space-x-4" : "space-x-4"} p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow`}
+                  >
+                  <div className="flex-shrink-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center mt-1">
+                    <div className="w-3 h-3 bg-white rounded-full"></div>
+                  </div>
+                  <span className="text-lg text-gray-700 font-medium">{item}</span>
+                </motion.div>
+              ))}
+            </div>
+            
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1, delay: 0.5 }}
+              viewport={{ once: true }}
+              className="relative"
+            >
+              <img
+                src="/diamond wire cutting.jpg"
+                alt="Diamond Wire Sawing"
+                loading="lazy"
+                className="w-full max-w-lg mx-auto rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+    
 
       {/* WHY CHOOSE CS SECTION - Enhanced */}
       <section ref={ref3} className="py-20 sm:py-32 px-4 sm:px-6 lg:px-20 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900 relative overflow-hidden">
