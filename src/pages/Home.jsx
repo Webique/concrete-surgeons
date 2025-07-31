@@ -129,18 +129,30 @@ export default function Home() {
       </section>
 
       {/* CLIENT LOGOS MARQUEE */}
-      <section className="bg-white py-12 overflow-hidden">
-  <div className="w-full whitespace-nowrap animate-marquee flex gap-12">
-    {logos.concat(logos).map((src, idx) => (
-      <img
-        key={idx}
-        src={src}
-        alt={`client-${idx}`}
-        className="h-16 md:h-20 w-auto object-contain"
-      />
-    ))}
-  </div>
-</section>
+      <section className="bg-white py-12">
+        <div className="marquee-container">
+          <div className="marquee-content gap-12">
+            {/* First set of logos */}
+            {logos.map((src, idx) => (
+              <img
+                key={`first-${idx}`}
+                src={src}
+                alt={`client-${idx}`}
+                className="h-16 md:h-20 w-auto object-contain flex-shrink-0"
+              />
+            ))}
+            {/* Duplicate set for seamless loop */}
+            {logos.map((src, idx) => (
+              <img
+                key={`second-${idx}`}
+                src={src}
+                alt={`client-${idx}`}
+                className="h-16 md:h-20 w-auto object-contain flex-shrink-0"
+              />
+            ))}
+          </div>
+        </div>
+      </section>
 {/* CORE SERVICES – Premium Overlapping Style */}
 {/* CORE SERVICES – Premium Overlapping Style */}
 <section ref={servicesRef} className="w-full bg-[#F8F9FA] overflow-hidden">

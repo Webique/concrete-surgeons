@@ -24,5 +24,21 @@ body {
 
 .animate-marquee {
   display: inline-flex;
-  animation: marquee 20s linear infinite;
+  animation: marquee 30s linear infinite;
+}
+
+/* Smooth infinite marquee without reset */
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee 30s linear infinite;
+  width: max-content;
+}
+
+.marquee-content:hover {
+  animation-play-state: paused;
 }
