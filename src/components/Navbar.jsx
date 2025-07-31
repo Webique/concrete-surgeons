@@ -54,6 +54,12 @@ const Navbar = () => {
     { path: '/contact', label: t('nav.contact') },
   ];
 
+  const qualificationsLink = {
+    path: '/Prequalification+Remarkable Projects.pdf',
+    label: t('nav.qualifications'),
+    external: true
+  };
+
   const toggleLanguage = () => {
     i18n.changeLanguage(i18n.language === 'en' ? 'ar' : 'en');
   };
@@ -130,6 +136,29 @@ const Navbar = () => {
             )
           )}
 
+          {/* Qualifications PDF Link */}
+          <a
+            href={qualificationsLink.path}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-gray-800 hover:text-primary transition duration-300 flex items-center gap-1"
+          >
+            {qualificationsLink.label}
+            <svg 
+              className="w-3 h-3" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                strokeWidth={2} 
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" 
+              />
+            </svg>
+          </a>
+
           <button
             onClick={toggleLanguage}
             className="border px-3 py-1 text-sm rounded-full hover:bg-primary hover:text-white transition"
@@ -188,6 +217,29 @@ const Navbar = () => {
                 </Link>
               )
             )}
+
+            {/* Qualifications PDF Link - Mobile */}
+            <a
+              href={qualificationsLink.path}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block text-sm text-gray-800 hover:text-primary transition duration-300 flex items-center gap-1"
+            >
+              {qualificationsLink.label}
+              <svg 
+                className="w-3 h-3" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  strokeWidth={2} 
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" 
+                />
+              </svg>
+            </a>
             <button
               onClick={toggleLanguage}
               className="block border px-3 py-1 rounded-full text-sm hover:bg-primary hover:text-white transition"
