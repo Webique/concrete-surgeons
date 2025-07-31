@@ -91,6 +91,31 @@ const Navbar = () => {
           }`}
           dir={isRTL ? 'rtl' : 'ltr'}
         >
+          {/* Qualifications PDF Link - Positioned correctly for RTL/LTR */}
+          {isRTL && (
+            <a
+              href={qualificationsLink.path}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-gray-800 hover:text-primary transition duration-300 flex items-center gap-1"
+            >
+              {qualificationsLink.label}
+              <svg 
+                className="w-3 h-3" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  strokeWidth={2} 
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" 
+                />
+              </svg>
+            </a>
+          )}
+
           {(isRTL ? [...navItems].reverse() : navItems).map((item, idx) =>
             item.submenu ? (
               <div
@@ -136,28 +161,30 @@ const Navbar = () => {
             )
           )}
 
-          {/* Qualifications PDF Link */}
-          <a
-            href={qualificationsLink.path}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-gray-800 hover:text-primary transition duration-300 flex items-center gap-1"
-          >
-            {qualificationsLink.label}
-            <svg 
-              className="w-3 h-3" 
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24"
+          {/* Qualifications PDF Link - For LTR */}
+          {!isRTL && (
+            <a
+              href={qualificationsLink.path}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-gray-800 hover:text-primary transition duration-300 flex items-center gap-1"
             >
-              <path 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
-                strokeWidth={2} 
-                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" 
-              />
-            </svg>
-          </a>
+              {qualificationsLink.label}
+              <svg 
+                className="w-3 h-3" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  strokeWidth={2} 
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" 
+                />
+              </svg>
+            </a>
+          )}
 
           <button
             onClick={toggleLanguage}
