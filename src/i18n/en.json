@@ -35,6 +35,14 @@
             "title": "Structural Retrofitting",
             "description": "Clean, non-destructive cuts through slabs, walls, and beams — ideal for mechanical openings and structural separations."
           }
+        },
+        "qualifications": {
+          "title": "Qualifications & Certifications",
+          "subtitle": "Discover our credentials and remarkable projects that showcase our expertise and commitment to excellence.",
+          "pdfTitle": "Prequalification & Remarkable Projects",
+          "pdfDescription": "Explore our comprehensive prequalification document and portfolio of remarkable projects that demonstrate our capabilities across demolition, cutting, and structural retrofitting.",
+          "downloadButton": "Download PDF",
+          "viewButton": "View Document"
         }
       },
 
