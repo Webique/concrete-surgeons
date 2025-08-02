@@ -202,8 +202,8 @@ export default function Home() {
       </motion.div>
     </Link>
 
-    {/* CUTTING */}
-    <Link to="/services/cutting">
+    {/* STRUCTURAL RETROFITTING */}
+    <Link to="/services/structural-retrofitting">
       <motion.div
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -212,21 +212,20 @@ export default function Home() {
         className="relative w-full h-[45vh] md:h-[55vh] rounded-3xl overflow-hidden group cursor-pointer"
       >
         <img
-          src={images[2]}
-          alt="Cutting"
+          src="/structural retrofitting.jpg"
+          alt="Structural Retrofitting"
           loading="lazy" // ✅ lazy load
           className="absolute inset-0 w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700 ease-in-out"
         />
         <div className="absolute inset-0 bg-black/30 backdrop-blur-sm flex flex-col justify-center px-6 md:px-16 text-white">
           <h3 className="text-2xl md:text-4xl font-extrabold mb-2 drop-shadow-lg">
-            {t("home.services.cutting.title")}
+            {t("home.services.structuralRetrofitting.title")}
           </h3>
-          <p className="text-sm md:text-lg font-light max-w-3xl drop-shadow-md">
-            {t("home.services.cutting.description")}
-          </p>
         </div>
       </motion.div>
     </Link>
+
+
 
 
   </div>

@@ -35,6 +35,9 @@
           "cutting": {
             "title": "Structural Retrofitting",
             "description": "Clean, non-destructive cuts through slabs, walls, and beams — ideal for mechanical openings and structural separations."
+          },
+          "structuralRetrofitting": {
+            "title": "Structural Retrofitting"
           }
         },
         "qualifications": {

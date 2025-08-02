@@ -10,6 +10,7 @@ import casestudy1 from "/casestudy1.png";
 import casestudy2_1 from "/casestudy2-1.jpg";
 import casestudy2_2 from "/casestudy2-2.jpg";
 import casestudy2_3 from "/casestudy2-3.jpg";
+import casestudy2_4 from "/casestudy.jpeg";
 import images from "/images.jpeg";
 import results from "/results.jpeg";
 
@@ -119,6 +120,14 @@ export default function CaseStudies() {
                   <img
                     src={casestudy1}
                     alt="GSK High-Reach Demolition"
+                    className="w-full h-80 object-cover rounded-lg shadow-2xl"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
+                </div>
+                <div className="relative">
+                  <img
+                    src={casestudy2_4}
+                    alt="GSK Project Additional View"
                     className="w-full h-80 object-cover rounded-lg shadow-2xl"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
