@@ -203,7 +203,7 @@ export default function Home() {
     </Link>
 
     {/* STRUCTURAL RETROFITTING */}
-    <Link to="/services/structural-retrofitting">
+    <Link to="/services/cutting">
       <motion.div
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
