@@ -455,13 +455,13 @@ export default function Demolition() {
               {/* Achievement Badges */}
               <div className="flex flex-wrap gap-4 mt-8">
                 <span className="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-full font-bold text-sm">
-                  First in Gulf
+                  {t("demolition.pioneeringBadgeFirst")}
                 </span>
                 <span className="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-full font-bold text-sm">
-                  27m System
+                  {t("demolition.pioneeringBadge27m")}
                 </span>
                 <span className="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-full font-bold text-sm">
-                  Safe Dismantling
+                  {t("demolition.pioneeringBadgeSafe")}
                 </span>
               </div>
             </motion.div>

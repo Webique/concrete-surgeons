@@ -22,7 +22,7 @@ const Footer = () => {
           <img
             src="/logo1.jpg"
             alt="Logo"
-            className="w-24 h-24 md:w-28 md:h-28 object-contain transition-all duration-500"
+            className="w-36 h-36 md:w-44 md:h-44 object-contain transition-all duration-500"
           />
           <p className="opacity-70 leading-relaxed max-w-xs">
             {t('footer.tagline', 'Precision demolition, cutting & retrofitting — built for the future.')}
@@ -32,10 +32,10 @@ const Footer = () => {
         {/* Contact Info + Socials */}
         <div className={`flex flex-col gap-2 ${isRTL ? 'items-end text-right' : 'items-start text-left'}`}>
           <h4 className="font-bold text-lg mb-2">{t('footer.contact', 'Contact Us')}</h4>
-          <p>+20 1028567000</p>
-          <p>+20 1062318000</p>
-          <p>+20 1028588003</p>
-          <p>contact@csmisr.com</p>
+          <p><span dir="ltr" className="inline-block">+20 1028567000</span></p>
+          <p><span dir="ltr" className="inline-block">+20 1062318000</span></p>
+          <p><span dir="ltr" className="inline-block">+20 1028588003</span></p>
+          <p><span dir="ltr" className="inline-block">contact@csmisr.com</span></p>
           <p>{t('footer.hours', 'Sun–Thu: 9:00 AM – 5:00 PM')}</p>
 
           <div className="flex gap-4 mt-4 text-[#093B5D]">
